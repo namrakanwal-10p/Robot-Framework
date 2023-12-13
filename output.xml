@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.5 on win32)" generated="20231122 23:09:02.321" rpa="false" schemaversion="3">
+<suite id="s1" name="Verify search functionality" source="C:\Users\namra.kanwal\PycharmProjects\ebayWebsite\tests\Verify_search_functionality.Robot">
+<test id="s1-t1" name="Verify basic search functionality" line="8">
+<kw name="Start testcase" library="CommonFunctionality">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.ebay.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231122 23:09:02.788" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20231122 23:09:02.788" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231122 23:09:02.788" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</msg>
+<status status="FAIL" starttime="20231122 23:09:02.788" endtime="20231122 23:09:02.812"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231122 23:09:02.813" endtime="20231122 23:09:02.813"/>
+</kw>
+<status status="FAIL" starttime="20231122 23:09:02.788" endtime="20231122 23:09:02.813"/>
+</kw>
+<kw name="Verify Search Results" library="ebay_UserDefinedKeyword">
+<status status="NOT RUN" starttime="20231122 23:09:02.814" endtime="20231122 23:09:02.814"/>
+</kw>
+<kw name="Filter results by condition" library="ebay_UserDefinedKeyword">
+<status status="NOT RUN" starttime="20231122 23:09:02.814" endtime="20231122 23:09:02.814"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20231122 23:09:02.814" endtime="20231122 23:09:02.814"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>ebay_UserDefinedKeyword.Verify filter results</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" starttime="20231122 23:09:02.814" endtime="20231122 23:09:02.814"/>
+</kw>
+<kw name="Finish testcase" library="CommonFunctionality">
+<status status="NOT RUN" starttime="20231122 23:09:02.814" endtime="20231122 23:09:02.814"/>
+</kw>
+<doc>This case verifies the basic search</doc>
+<tag>Functional</tag>
+<status status="FAIL" starttime="20231122 23:09:02.788" endtime="20231122 23:09:02.814">TypeError: WebDriver.__init__() got an unexpected keyword argument 'service_log_path'</status>
+</test>
+<status status="FAIL" starttime="20231122 23:09:02.327" endtime="20231122 23:09:02.814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Verify search functionality">Verify search functionality</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
