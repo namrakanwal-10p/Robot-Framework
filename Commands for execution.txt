@@ -1,0 +1,18 @@
+Datadriver command with listener:
+robot --listener .\tests\TestResultCounter.py  .\dataDriver\dataDriver.robot 
+
+pabot command:
+pabot --processes 4 .\tests\Website_tests\*.robot  
+
+Complete execution of web testcases folder:
+ robot -d results --loglevel TRACE tests\Website_tests\*.robot
+
+API all testcases:
+
+ robot -d results --loglevel TRACE tests\API_tests\*.robot
+
+pre-run modifier command:
+robot --prerunmodifier tests\MyVisitor.py  tests\Website_tests\click_alerts.robot
+
+command for generating multiple reports:
+ robot --outputdir results --timestampoutputs tests\Website_tests\click_alerts.robot

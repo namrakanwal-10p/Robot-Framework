@@ -1,0 +1,4 @@
+robotframework == 7.0
+robotframework-seleniumlibrary== 6.2.0
+selenium==
+# Other Python libraries used in your Robot Framework project

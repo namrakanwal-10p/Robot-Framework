@@ -1,0 +1,23 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Interaction widget                                                     
+==============================================================================
+Interaction of Sorting :: This case should verify the list is sorted  One
+Two
+Three
+Four
+Five
+Six
+Sorted List: ['OneTwoThreeFourFiveSix']
+| PASS |
+------------------------------------------------------------------------------
+Grid Test Element Presence :: This case drag the fifth element wit... | PASS |
+------------------------------------------------------------------------------
+Suites.Interaction widget                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\2\output.xml

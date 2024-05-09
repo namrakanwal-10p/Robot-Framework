@@ -1,0 +1,43 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.List Of Books                                                          
+==============================================================================
+Verify books list :: This case login a user and verifies the list ... Image
+Title
+Author
+Publisher
+Git Pocket Guide
+Richard E. Silverman
+O'Reilly Media
+Learning JavaScript Design Patterns
+Addy Osmani
+O'Reilly Media
+Designing Evolvable Web APIs with ASP.NET
+Glenn Block et al.
+O'Reilly Media
+Speaking JavaScript
+Axel Rauschmayer
+O'Reilly Media
+You Don't Know JS
+Kyle Simpson
+O'Reilly Media
+Programming JavaScript Applications
+Eric Elliott
+O'Reilly Media
+Eloquent JavaScript, Second Edition
+Marijn Haverbeke
+No Starch Press
+Understanding ECMAScript 6
+Nicholas C. Zakas
+No Starch Press
+        
+| PASS |
+------------------------------------------------------------------------------
+Suites.List Of Books                                                  | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\3\output.xml

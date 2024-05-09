@@ -1,10 +1,15 @@
 *** Settings ***
 Library           SeleniumLibrary
-Variables       ../Variables/Locators/Swag_labs_locators.py
+Variables       ../Variables/Locators/website_locators.py
 
 *** Keywords ***
-Start testcase
-   Open browser        ${url}  ${browser}   {CHROMEDRIVER_PATH}= C:/Users/namra.kanwal/Downloads/chromedriver_win32 (2)/chromedriver.exe
+Start testcase for chrome
+   Open browser        ${url2}  ${browser_chrome}
+   Maximize Browser Window
+
+Start testcase for firefox
+   Open browser    ${url}    ${browser_firefox}
+   sleep    10s
    Maximize Browser Window
 
 Finish testcase
