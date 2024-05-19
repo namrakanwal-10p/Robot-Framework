@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Fetch code from Git repository
-                git url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namrakanwal-10p'
+                git url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'your-credentials-id'
             }
         }
 
@@ -19,8 +19,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Execute your Robot Framework script
-                sh 'sh 'robot --outputdir results --loglevel TRACE tests/Website_tests/'
-'
+                sh 'robot --outputdir results --loglevel TRACE tests/Website_tests/'
             }
         }
     }
