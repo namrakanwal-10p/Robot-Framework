@@ -19,7 +19,8 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Execute your Robot Framework script
-                sh 'robot -d results --loglevel TRACE tests\Website_tests\SuiteExecuter\Testsuite.robot'
+                sh 'sh 'robot --outputdir results --loglevel TRACE tests/Website_tests/'
+'
             }
         }
     }
