@@ -3,12 +3,13 @@ Suites
 ==============================================================================
 Suites.Click Alerts                                                           
 ==============================================================================
-Close the alert pop-up :: This case click a alert button              | PASS |
+Close the alert pop-up :: This case click a alert button              | FAIL |
+Keyword 'Element Should Be Visible' failed after retrying for 10 seconds. The last error was: Element with locator 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[3]/div/ul/li[2]/span' not found.
 ------------------------------------------------------------------------------
-Suites.Click Alerts                                                   | PASS |
-1 test, 1 passed, 0 failed
+Suites.Click Alerts                                                   | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Suites                                                                | PASS |
-1 test, 1 passed, 0 failed
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\0\output.xml

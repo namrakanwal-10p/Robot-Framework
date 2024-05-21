@@ -1,7 +1,7 @@
 *** Settings ***
 Library              SeleniumLibrary
 Resource          ../../resources/CommonFunctionality.robot
-Resource         ../../resources/orangeHRMkeyword.robot
+Resource         ../../resources/WebsiteKeyword.robot
 
 *** Test Cases ***
 Close the alert pop-up
@@ -10,9 +10,9 @@ Close the alert pop-up
 
     Start testcase for chrome
     Alert widget
-    Wait Until Keyword Succeeds    10s    10s    Element Should Be Visible    ${Alert_button}
+    Wait Until Element Is Visible    ${Alert_button}
     Alert button
-    Wait Until Keyword Succeeds    10s    10s    Element Should Be Visible    ${Click_me}
+    Wait Until Element Is Visible     ${click_me}
     Click me button
     Handle alert    ACCEPT
     Finish testcase

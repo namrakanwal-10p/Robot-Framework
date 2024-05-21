@@ -12,12 +12,26 @@ Six
 Sorted List: ['OneTwoThreeFourFiveSix']
 | PASS |
 ------------------------------------------------------------------------------
-Grid Test Element Presence :: This case drag the fifth element wit... | PASS |
+Grid Test Element Presence :: This case drag the fifth element wit...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\tests\Website_tests\Interaction_widget.robot:30
+    T:  Grid Test Element Presence    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\tests\Website_tests\Interaction_widget.robot:35
+      Click on interaction    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\resources\orangeHRMkeyword.robot:54
+      Click Element    ${interaction_widget}
+      |  ${interaction_widget} = xpath:(//div[@class='card-up'])[5] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath:(//div[@class='card-up'])[5]' not found.
 ------------------------------------------------------------------------------
-Suites.Interaction widget                                             | PASS |
-2 tests, 2 passed, 0 failed
+Suites.Interaction widget                                             | FAIL |
+2 tests, 1 passed, 1 failed
 ==============================================================================
-Suites                                                                | PASS |
-2 tests, 2 passed, 0 failed
+Suites                                                                | FAIL |
+2 tests, 1 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\2\output.xml

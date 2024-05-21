@@ -1,4 +1,6 @@
 robotframework == 7.0
 robotframework-seleniumlibrary== 6.2.0
-selenium==
+selenium==4.20.0
+robotframework-appiumlibrary==2.0.0
+Appium-Python-Client==2.10.1
 # Other Python libraries used in your Robot Framework project

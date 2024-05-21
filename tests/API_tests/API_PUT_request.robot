@@ -11,10 +11,10 @@ Update Existing Book
     ${headers}=    Create Dictionary
     ${payload}=    Create Dictionary
     ...             title=Todd
-    ...             author=William Shakespeare
+    ...             author=Saad
     ...             type=Fiction
     ...             dateAdded=Sun Sep 04 20:23:44 PKT 2022
-    ${response}=    PUT On Session     MySession    /books/5    data=${payload}    headers=${headers}
+    ${response}=    PUT On Session     MySession    /books/12    data=${payload}    headers=${headers}
     Should Be Equal As Strings    ${response.status_code}    200
     Log to console    ${response.text}
 

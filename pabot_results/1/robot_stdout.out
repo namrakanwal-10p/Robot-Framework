@@ -3,12 +3,26 @@ Suites
 ==============================================================================
 Suites.Click widget                                                           
 ==============================================================================
-Select birth date from date picker :: This case select the date fr... | PASS |
+Select birth date from date picker :: This case select the date fr...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\tests\Website_tests\Click_widget.robot:8
+    T:  Select birth date from date picker    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\tests\Website_tests\Click_widget.robot:13
+      Click on widget    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\resources\orangeHRMkeyword.robot:30
+      Click Element    ${widgets}
+      |  ${widgets} = xpath=(//div)[28] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=(//div)[28]' not found.
 ------------------------------------------------------------------------------
-Suites.Click widget                                                   | PASS |
-1 test, 1 passed, 0 failed
+Suites.Click widget                                                   | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Suites                                                                | PASS |
-1 test, 1 passed, 0 failed
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\1\output.xml

@@ -1,22 +1,19 @@
 *** Settings ***
 Library      SeleniumLibrary
 Library      DataDriver  ../TestData/Data.csv
-Resource     ../resources/orangeHRMkeyword.robot
+Resource         WebsiteKeyword.robot
 Resource     ../resources/CommonFunctionality.robot
-
 
 Test Template       login
 Test Teardown       close all browsers
 
-
 *** Keywords ***
-
 login
   [Arguments]     ${username}   ${password}
   Start testcase for firefox
-  Input text          xpath://input[@placeholder='Username']        ${username}
-  Input text          xpath://input[@placeholder='Password']        ${password}
-  Click element       xpath://button[@type='submit']
+  Input text          ${username_orangeHRM}       ${username}
+  Input text          ${password_orangeHRM}       ${password}
+  Click element       ${sign_in_orangeHRM}
 
 *** Test Cases ***
 

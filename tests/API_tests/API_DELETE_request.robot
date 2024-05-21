@@ -5,7 +5,7 @@ Library    Collections
 
 *** Variables ***
 ${base_url}         http://localhost:3000
-${book_id}          5
+${book_id}          12
 
 
 *** Test Cases ***

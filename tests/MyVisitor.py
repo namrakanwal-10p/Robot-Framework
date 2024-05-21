@@ -13,3 +13,4 @@ class MyVisitor(SuiteVisitor):
             # Create a new keyword within the test case
             keyword = tc.body.create_keyword('Log', args=['Hello from test case #%s' % i])
             tc.body.append(keyword)
+            

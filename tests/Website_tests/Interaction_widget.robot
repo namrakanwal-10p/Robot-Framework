@@ -1,8 +1,8 @@
 *** Settings ***
 Library              SeleniumLibrary
 Resource          ../../resources/CommonFunctionality.robot
-Resource         ../../resources/orangeHRMkeyword.robot
-Variables        ../Variables/Locators/website_locators.py
+Resource         ../../resources/WebsiteKeyword.robot
+Variables        ../Variables/Locators/Website_locators.py
 
 *** Test Cases ***
 Interaction of Sorting
@@ -10,10 +10,12 @@ Interaction of Sorting
   [Tags]  Functional
 
   Start testcase for chrome
+  execute javascript    window.scrollTo(0,200)
   Click on interaction
-  execute javascript    window.scrollTo(0,400)
+  execute javascript    window.scrollTo(0,200)
+  Wait until element is visible    ${click_on_sortable}
   click_on_sortable
-  Wait Until Keyword Succeeds    20s    10s    Element Should Be Visible    ${alphabet_list}
+  Wait Until Element Is Visible    ${alphabet_list}
   ${alphabet_locator}    Get WebElement   ${alphabet_list}
   @{element_texts}=    Create List
   FOR    ${alphabet_locator}     IN    ${alphabet_locator}
@@ -25,19 +27,21 @@ Interaction of Sorting
     ${sorted_texts}=    Evaluate    sorted($element_texts)
     Log to console    Sorted List: ${sorted_texts}
     Should be equal    ${element_texts}    ${sorted_texts}
-  Finish testcase
+    Finish testcase
 
 Grid Test Element Presence
   [Documentation]  This case drag the fifth element with nine
   [Tags]  Functional
 
   Start testcase for chrome
+  execute javascript    window.scrollTo(0,200)
   Click on interaction
-  execute javascript    window.scrollTo(0,500)
+  execute javascript    window.scrollTo(0,200)
   click_on_sortable
   click_on_grid
   Get selenium implicit wait
   execute javascript    window.scrollTo(0,500)
+  Wait until element is visible    ${fifth_element}
   ${source_element}    Get WebElement    ${fifth_element}
   ${target_element}    Get WebElement    ${nineth_element}
   Drag and drop     ${source_element}     ${target_element}
