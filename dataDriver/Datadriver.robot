@@ -1,7 +1,7 @@
 *** Settings ***
 Library      SeleniumLibrary
 Library      DataDriver  ../TestData/Data.csv
-Resource         WebsiteKeyword.robot
+Resource         ../resources/WebsiteKeyword.robot
 Resource     ../resources/CommonFunctionality.robot
 
 Test Template       login

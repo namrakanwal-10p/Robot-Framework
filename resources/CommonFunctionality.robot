@@ -1,6 +1,6 @@
 *** Settings ***
 Library           SeleniumLibrary
-Variables       ../Variables/Locators/website_locators.py
+Variables       ../Variables/Locators/Browser_locators.py
 
 *** Keywords ***
 Start testcase for chrome
