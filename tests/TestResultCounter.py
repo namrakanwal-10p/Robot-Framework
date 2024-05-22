@@ -1,6 +1,7 @@
 from robot.api import SuiteVisitor
 from robot import run
 
+
 class TestResultCounter(SuiteVisitor):
     ROBOT_LISTENER_API_VERSION = 3
 
@@ -33,6 +34,3 @@ class TestResultCounter(SuiteVisitor):
     def close(self):
         print("Number of Passed Test Cases:", self.pass_count)
         print("Number of Failed Test Cases:", self.fail_count)
-
-if __name__ == '__main__':
-    run('login.robot', listeners=[TestResultCounter()])

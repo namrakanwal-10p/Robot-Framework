@@ -1,6 +1,6 @@
 *** Settings ***
 Library      SeleniumLibrary
-Library      DataDriver  ../TestData/Data.csv
+Library      DataDriver  ../testData/Data.csv
 Resource         ../resources/WebsiteKeyword.robot
 Resource     ../resources/CommonFunctionality.robot
 

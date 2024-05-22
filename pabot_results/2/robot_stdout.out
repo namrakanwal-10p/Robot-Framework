@@ -3,35 +3,41 @@ Suites
 ==============================================================================
 Suites.Interaction widget                                                     
 ==============================================================================
-Interaction of Sorting :: This case should verify the list is sorted  One
-Two
-Three
-Four
-Five
-Six
-Sorted List: ['OneTwoThreeFourFiveSix']
-| PASS |
-------------------------------------------------------------------------------
-Grid Test Element Presence :: This case drag the fifth element wit...   
+Interaction of Sorting :: This case should verify the list is sorted    
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\tests\Website_tests\Interaction_widget.robot:30
-    T:  Grid Test Element Presence    
+    File  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\tests\Website_tests\Interaction_widget.robot:8
+    T:  Interaction of Sorting    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\tests\Website_tests\Interaction_widget.robot:35
-      Click on interaction    
+    File  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\tests\Website_tests\Interaction_widget.robot:12
+      Start testcase for chrome    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\resources\orangeHRMkeyword.robot:54
-      Click Element    ${interaction_widget}
-      |  ${interaction_widget} = xpath:(//div[@class='card-up'])[5] (str)
+    File  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\resources\CommonFunctionality.robot:8
+      Maximize Browser Window    
 ______________________________________________________________________________
 | FAIL |
-Element with locator 'xpath:(//div[@class='card-up'])[5]' not found.
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F7081F52+60322]
+	(No symbol) [0x00007FF6F6FFCEC9]
+	(No symbol) [0x00007FF6F6EB7EBA]
+	(No symbol) [0x00007FF6F6E8D5A5]
+	(No symbol) [0x00007FF6F6F336B7]
+	(No symbol) [0x00007FF6F6F4B331]
+	(No symbol) [0x00007FF6F6F2BFC3]
+	(No symbol) [0x00007FF6F6EF9617]
+	(No symbol) [0x00007FF6F6EFA211]
+	GetHandleVerifier [0x00007FF6F739949D+3301613]
+	GetHandleVerifier [0x00007FF6F73E36C3+3605267]
+	GetHandleVerifier [0x00007FF6F73D9440+3563664]
+	GetHandleVerifier [0x00007FF6F7134326+790390]
+	(No symbol) [0x00007FF6F700750F]
+	(No symbol) [0x00007FF6F7003404]
+	(No symbol) [0x00007FF6F7003592]
+	(No symbol) [0x00007FF6F6FF2F9F]
+	BaseThreadInitThunk [0x00007FFCEB747344+20]
+	RtlUserThreadStart [0x00007FFCEC2826B1+33]
 ------------------------------------------------------------------------------
-Suites.Interaction widget                                             | FAIL |
-2 tests, 1 passed, 1 failed
-==============================================================================
-Suites                                                                | FAIL |
-2 tests, 1 passed, 1 failed
-==============================================================================
-Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\2\output.xml
+Grid Test Element Presence :: This case drag the fifth element wit... 

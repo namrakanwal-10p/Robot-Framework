@@ -3,8 +3,42 @@ Suites
 ==============================================================================
 Suites.Click Alerts                                                           
 ==============================================================================
-Close the alert pop-up :: This case click a alert button              | FAIL |
-Keyword 'Element Should Be Visible' failed after retrying for 10 seconds. The last error was: Element with locator 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[3]/div/ul/li[2]/span' not found.
+Close the alert pop-up :: This case click a alert button                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\tests\Website_tests\click_alerts.robot:7
+    T:  Close the alert pop-up    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\tests\Website_tests\click_alerts.robot:11
+      Start testcase for chrome    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\resources\CommonFunctionality.robot:8
+      Maximize Browser Window    
+______________________________________________________________________________
+| FAIL |
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F7081F52+60322]
+	(No symbol) [0x00007FF6F6FFCEC9]
+	(No symbol) [0x00007FF6F6EB7EBA]
+	(No symbol) [0x00007FF6F6E8D5A5]
+	(No symbol) [0x00007FF6F6F336B7]
+	(No symbol) [0x00007FF6F6F4B331]
+	(No symbol) [0x00007FF6F6F2BFC3]
+	(No symbol) [0x00007FF6F6EF9617]
+	(No symbol) [0x00007FF6F6EFA211]
+	GetHandleVerifier [0x00007FF6F739949D+3301613]
+	GetHandleVerifier [0x00007FF6F73E36C3+3605267]
+	GetHandleVerifier [0x00007FF6F73D9440+3563664]
+	GetHandleVerifier [0x00007FF6F7134326+790390]
+	(No symbol) [0x00007FF6F700750F]
+	(No symbol) [0x00007FF6F7003404]
+	(No symbol) [0x00007FF6F7003592]
+	(No symbol) [0x00007FF6F6FF2F9F]
+	BaseThreadInitThunk [0x00007FFCEB747344+20]
+	RtlUserThreadStart [0x00007FFCEC2826B1+33]
 ------------------------------------------------------------------------------
 Suites.Click Alerts                                                   | FAIL |
 1 test, 0 passed, 1 failed
@@ -12,4 +46,4 @@ Suites.Click Alerts                                                   | FAIL |
 Suites                                                                | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\pabot_results\0\output.xml
+Output:  C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\pabot_results\0\output.xml

@@ -1,163 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-05-17T23:49:27.295951" rpa="false" schemaversion="5">
-<suite id="s1" name="dataDriver" source="C:\Users\namra.kanwal\PycharmProjects\Robotframework-Automation\dataDriver\dataDriver.robot">
+<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-05-22T17:59:21.074132" rpa="false" schemaversion="5">
+<suite id="s1" name="dataDriver" source="C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\dataDriver\dataDriver.robot">
 <test id="s1-t1" name="LoginFormTest using" line="20">
 <kw name="login">
 <kw name="Start testcase for firefox" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:49:27.729736" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-05-22T17:59:21.373926" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-05-22T17:59:21.389262" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
 <arg>${url}</arg>
 <arg>${browser_firefox}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-17T23:49:27.729736" elapsed="193.991251"/>
+<status status="PASS" start="2024-05-22T17:59:21.372839" elapsed="15.100953"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-17T23:52:51.733840" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-05-22T17:59:46.487278" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-17T23:52:41.721988" elapsed="10.011852"/>
+<status status="PASS" start="2024-05-22T17:59:36.473792" elapsed="10.013486"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-17T23:52:51.733840" elapsed="0.595049"/>
+<status status="PASS" start="2024-05-22T17:59:46.488471" elapsed="0.280111"/>
 </kw>
-<status status="PASS" start="2024-05-17T23:49:27.728663" elapsed="204.600226"/>
+<status status="PASS" start="2024-05-22T17:59:21.372839" elapsed="25.396990"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:52:52.329963" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
+<msg time="2024-05-22T17:59:46.770986" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
 <arg>${username_orangeHRM}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:52:52.328889" elapsed="0.057567"/>
+<status status="PASS" start="2024-05-22T17:59:46.769829" elapsed="0.080690"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:52:52.387463" level="INFO">Typing text ' admin123' into text field '//input[@name='password']'.</msg>
+<msg time="2024-05-22T17:59:46.851764" level="INFO">Typing text ' admin123' into text field '//input[@name='password']'.</msg>
 <arg>${password_orangeHRM}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:52:52.387463" elapsed="0.031993"/>
+<status status="PASS" start="2024-05-22T17:59:46.850624" elapsed="0.030219"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:52:52.420459" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<msg time="2024-05-22T17:59:46.880966" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
 <arg>${sign_in_orangeHRM}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:52:52.419456" elapsed="2.759725"/>
+<status status="PASS" start="2024-05-22T17:59:46.880966" elapsed="1.294663"/>
 </kw>
 <arg>username=Admin</arg>
 <arg>password= admin123</arg>
-<status status="PASS" start="2024-05-17T23:49:27.727586" elapsed="207.451595"/>
+<status status="PASS" start="2024-05-22T17:59:21.371751" elapsed="26.803878"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-05-17T23:52:55.179181" elapsed="6.860742"/>
+<status status="PASS" start="2024-05-22T17:59:48.176641" elapsed="7.325552"/>
 </kw>
-<status status="PASS" start="2024-05-17T23:49:27.723226" elapsed="214.317799"/>
+<status status="PASS" start="2024-05-22T17:59:21.370666" elapsed="34.131929"/>
 </test>
 <test id="s1-t2" name="LoginFormTest using" line="20">
 <kw name="login">
 <kw name="Start testcase for firefox" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:53:02.046361" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-05-22T17:59:55.511846" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-05-22T17:59:55.528638" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
 <arg>${url}</arg>
 <arg>${browser_firefox}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-17T23:53:02.046361" elapsed="69.333455"/>
+<status status="PASS" start="2024-05-22T17:59:55.511371" elapsed="14.164312"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-17T23:54:21.382185" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-05-22T18:00:19.689780" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-17T23:54:11.380819" elapsed="10.001366"/>
+<status status="PASS" start="2024-05-22T18:00:09.676885" elapsed="10.012895"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-17T23:54:21.382185" elapsed="0.612036"/>
+<status status="PASS" start="2024-05-22T18:00:19.690968" elapsed="0.278941"/>
 </kw>
-<status status="PASS" start="2024-05-17T23:53:02.045279" elapsed="79.949047"/>
+<status status="PASS" start="2024-05-22T17:59:55.510461" elapsed="24.459547"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:54:21.994326" level="INFO">Typing text 'locked_user' into text field '//input[@name='username']'.</msg>
+<msg time="2024-05-22T18:00:19.972331" level="INFO">Typing text 'locked_user' into text field '//input[@name='username']'.</msg>
 <arg>${username_orangeHRM}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:54:21.994326" elapsed="0.058878"/>
+<status status="PASS" start="2024-05-22T18:00:19.971189" elapsed="0.084250"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:54:22.054302" level="INFO">Typing text ' secret_sauce' into text field '//input[@name='password']'.</msg>
+<msg time="2024-05-22T18:00:20.056813" level="INFO">Typing text ' secret_sauce' into text field '//input[@name='password']'.</msg>
 <arg>${password_orangeHRM}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:54:22.053204" elapsed="0.029523"/>
+<status status="PASS" start="2024-05-22T18:00:20.055812" elapsed="0.040517"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:54:22.083807" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<msg time="2024-05-22T18:00:20.096768" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
 <arg>${sign_in_orangeHRM}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:54:22.082727" elapsed="5.276079"/>
+<status status="PASS" start="2024-05-22T18:00:20.096768" elapsed="1.074180"/>
 </kw>
 <arg>username=locked_user</arg>
 <arg>password= secret_sauce</arg>
-<status status="PASS" start="2024-05-17T23:53:02.045279" elapsed="85.313527"/>
+<status status="PASS" start="2024-05-22T17:59:55.509845" elapsed="25.661541"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-05-17T23:54:27.358806" elapsed="7.426168"/>
+<status status="PASS" start="2024-05-22T18:00:21.171886" elapsed="7.798749"/>
 </kw>
-<status status="PASS" start="2024-05-17T23:53:02.043123" elapsed="92.742940"/>
+<status status="PASS" start="2024-05-22T17:59:55.505906" elapsed="33.465856"/>
 </test>
 <test id="s1-t3" name="LoginFormTest using" line="20">
 <kw name="login">
 <kw name="Start testcase for firefox" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:54:34.789263" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-05-22T18:00:28.980510" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<msg time="2024-05-22T18:00:28.994536" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
 <arg>${url}</arg>
 <arg>${browser_firefox}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-17T23:54:34.789263" elapsed="104.337971"/>
+<status status="PASS" start="2024-05-22T18:00:28.979434" elapsed="15.661536"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-17T23:56:29.128835" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-05-22T18:00:54.653385" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-17T23:56:19.127234" elapsed="10.001601"/>
+<status status="PASS" start="2024-05-22T18:00:44.640970" elapsed="10.012916"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-17T23:56:29.128835" elapsed="0.267832"/>
+<status status="PASS" start="2024-05-22T18:00:54.653886" elapsed="0.296283"/>
 </kw>
-<status status="PASS" start="2024-05-17T23:54:34.789263" elapsed="114.607404"/>
+<status status="PASS" start="2024-05-22T18:00:28.979434" elapsed="25.970735"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:56:29.397669" level="INFO">Typing text 'admin' into text field '//input[@name='username']'.</msg>
+<msg time="2024-05-22T18:00:54.951299" level="INFO">Typing text 'admin' into text field '//input[@name='username']'.</msg>
 <arg>${username_orangeHRM}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:56:29.397669" elapsed="0.039099"/>
+<status status="PASS" start="2024-05-22T18:00:54.950169" elapsed="0.096795"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:56:29.437848" level="INFO">Typing text ' admin123' into text field '//input[@name='password']'.</msg>
+<msg time="2024-05-22T18:00:55.049786" level="INFO">Typing text ' admin123' into text field '//input[@name='password']'.</msg>
 <arg>${password_orangeHRM}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:56:29.437797" elapsed="0.025053"/>
+<status status="PASS" start="2024-05-22T18:00:55.047668" elapsed="0.038897"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-17T23:56:29.462850" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<msg time="2024-05-22T18:00:55.086565" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
 <arg>${sign_in_orangeHRM}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-17T23:56:29.462850" elapsed="5.245346"/>
+<status status="PASS" start="2024-05-22T18:00:55.086565" elapsed="1.443599"/>
 </kw>
 <arg>username=admin</arg>
 <arg>password= admin123</arg>
-<status status="PASS" start="2024-05-17T23:54:34.788192" elapsed="119.920004"/>
+<status status="PASS" start="2024-05-22T18:00:28.978351" elapsed="27.551813"/>
 </kw>
 <kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-05-17T23:56:34.709200" elapsed="3.004937"/>
+<status status="PASS" start="2024-05-22T18:00:56.531232" elapsed="4.283950"/>
 </kw>
-<status status="PASS" start="2024-05-17T23:54:34.787122" elapsed="122.927015"/>
+<status status="PASS" start="2024-05-22T18:00:28.974904" elapsed="31.841394"/>
 </test>
-<status status="PASS" start="2024-05-17T23:49:27.317110" elapsed="430.398027"/>
+<status status="PASS" start="2024-05-22T17:59:21.082739" elapsed="99.735686"/>
 </suite>
 <statistics>
 <total>
@@ -170,7 +173,7 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-17T23:53:02.043086" level="WARN">Multiple tests with name 'LoginFormTest using' executed in suite 'dataDriver'.</msg>
-<msg time="2024-05-17T23:54:34.786063" level="WARN">Multiple tests with name 'LoginFormTest using' executed in suite 'dataDriver'.</msg>
+<msg time="2024-05-22T17:59:55.504820" level="WARN">Multiple tests with name 'LoginFormTest using' executed in suite 'dataDriver'.</msg>
+<msg time="2024-05-22T18:00:28.973865" level="WARN">Multiple tests with name 'LoginFormTest using' executed in suite 'dataDriver'.</msg>
 </errors>
 </robot>

@@ -2,7 +2,7 @@
 Library              SeleniumLibrary
 Resource          ../../resources/CommonFunctionality.robot
 Resource         ../../resources/WebsiteKeyword.robot
-Variables        ../Variables/Locators/Website_locators.py
+Variables        ../../variables/Locators/Website_locators.py
 
 *** Test Cases ***
 Interaction of Sorting

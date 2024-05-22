@@ -6,10 +6,11 @@ Resource         ../mobile_tests/login.robot
 *** Test Cases ***
 Search a Hotel
     Launch application & Login
-    Wait Until Element Is Visible     ${designation}
+    Wait Until Element Is Visible     ${destination}
     ${overlay_present}=    Run Keyword And Return Status    Check Overlay Present
     Run Keyword If    ${overlay_present}    Press Keycode    4  # Press back button if overlay present
-    Designation
+    Sleep    4s
+    Destination
     Wait Until Element Is Visible      ${country_name}
     Enter country
     Wait Until Element Is Visible     ${select_city_from_drop_down}

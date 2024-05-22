@@ -21,11 +21,11 @@ Enter pass
 Click on signin button
     Click element    ${Sign_in}
 
-Designation
-    Click element     ${designation}
+Destination
+    Click element     ${destination}
 
 Enter country
-     Input text     ${country_enter_field}  ${country_name}
+    Input text    ${country_enter_field}    ${country_name}
 
 Select city
     Click element    ${select_city_from_drop_down}

@@ -1,16 +1,13 @@
 from robot.api import SuiteVisitor
 
 
-class MyVisitor(SuiteVisitor):
-
+class TestCountVisitor(SuiteVisitor):
     def __init__(self):
-        pass
+        self.test_count = 0
 
     def start_suite(self, suite):
-        for i in range(3):
-            # Create a new test case
-            tc = suite.tests.create(name='Dynamic Test #%s' % i)
-            # Create a new keyword within the test case
-            keyword = tc.body.create_keyword('Log', args=['Hello from test case #%s' % i])
-            tc.body.append(keyword)
-            
+        self.test_count += len(suite.tests)
+
+    def end_suite(self, suite):
+        print(f"Total test cases in '{suite.name}': {self.test_count}")
+
