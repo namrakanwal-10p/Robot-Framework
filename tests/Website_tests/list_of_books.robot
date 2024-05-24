@@ -11,16 +11,16 @@ Verify books list
   [Tags]  Functional
 
    Start testcase for chrome
-   execute javascript    window.scrollTo(0,700)
+   Scroll To Percentage    90
    Click on book store application
    Wait Until Element Is Visible   ${login_button}
    Click on login
-   execute javascript    window.scrollTo(0,500)
+   Scroll To Percentage    70
    Enter Username of customer
    Enter Password of customer
    Click on login
    Wait Until Element Is Visible   ${list_of_books}
-   execute javascript    window.scrollTo(0,500)
+   Scroll To Percentage    70
    ${books_list}    Get WebElement    ${list_of_books}
    @{element_texts}=    Create List
    FOR    ${books_list}     IN    ${books_list}

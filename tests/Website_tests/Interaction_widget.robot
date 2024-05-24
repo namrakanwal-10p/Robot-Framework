@@ -10,9 +10,9 @@ Interaction of Sorting
   [Tags]  Functional
 
   Start testcase for chrome
-  execute javascript    window.scrollTo(0,200)
+  Scroll To Percentage    50
   Click on interaction
-  execute javascript    window.scrollTo(0,200)
+  Scroll To Percentage    20
   Wait until element is visible    ${click_on_sortable}
   click_on_sortable
   Wait Until Element Is Visible    ${alphabet_list}
@@ -34,13 +34,13 @@ Grid Test Element Presence
   [Tags]  Functional
 
   Start testcase for chrome
-  execute javascript    window.scrollTo(0,200)
+  Scroll To Percentage    50
   Click on interaction
-  execute javascript    window.scrollTo(0,200)
+  Scroll To Percentage    50
   click_on_sortable
   click_on_grid
   Get selenium implicit wait
-  execute javascript    window.scrollTo(0,500)
+  Scroll To Percentage    50
   Wait until element is visible    ${fifth_element}
   ${source_element}    Get WebElement    ${fifth_element}
   ${target_element}    Get WebElement    ${nineth_element}

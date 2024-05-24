@@ -2,11 +2,14 @@
 Suite Setup    Open My Browser
 Suite Teardown    Close Browser
 Test Setup    Reset Browser State
-Resource         ../../../resources/WebsiteKeyword.robot
+Test Teardown    Add Delay
+Resource    ../../../resources/WebsiteKeyword.robot
+Resource    ../../../resources/CommonFunctionality.robot
 
 *** Variables ***
 ${BROWSER}    chrome
 ${URL}    https://demoqa.com/
+${DELAY}    2s   # Define the delay duration
 
 *** Keywords ***
 Open My Browser
@@ -19,25 +22,29 @@ Reset Browser State
 Close Browser
     Close All Browsers
 
-*** Test Cases ***
+Add Delay
+    Sleep    ${DELAY}   # Adding delay between test cases
 
+*** Test Cases ***
 Click Alerts Tests
+    [Documentation]    Test clicking alert buttons
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
-    Wait Until Element Is Visible     ${click_me}
+    Wait Until Element Is Visible    ${click_me}
     Click me button
     Handle alert    ACCEPT
 
 Click Widget Tests
+    [Documentation]    Test clicking widget elements
     Click on widget
-    execute javascript    window.scrollTo(0,500)
+    Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
     Wait Until Element Is Visible    ${Select_Date_field}
     Select_Date_field
     Wait Until Element Is Visible    ${Select_month}
     Select month
-    execute javascript    window.scrollTo(0,500)
+    Scroll To Percentage    50    # Scroll down by another 50% of the screen height
     Click on month
     Wait Until Element Is Visible    ${Click_on_year}
     Click on year
@@ -45,20 +52,21 @@ Click Widget Tests
     Select year
 
 Interaction Widget Tests
-  execute javascript    window.scrollTo(0,200)
-  Click on interaction
-  execute javascript    window.scrollTo(0,200)
-  Wait until element is visible    ${click_on_sortable}
-  click_on_sortable
-  Wait Until Element Is Visible    ${alphabet_list}
-  ${alphabet_locator}    Get WebElement   ${alphabet_list}
-  @{element_texts}=    Create List
-  FOR    ${alphabet_locator}     IN    ${alphabet_locator}
-  ${text}=    Get Text    ${alphabet_locator}
-  ${text}=    Evaluate    $text.replace('\\n', '')   # Remove newline characters
-  ${element_texts}=    Evaluate    ${element_texts} + [$text]
-   Log to console    ${alphabet_locator.text}
-  END
+    [Documentation]    Test interaction widgets
+    Scroll To Percentage    50
+    Click on interaction
+    Scroll To Percentage    20
+    Wait until element is visible    ${click_on_sortable}
+    click_on_sortable
+    Wait Until Element Is Visible    ${alphabet_list}
+    ${alphabet_locator}    Get WebElement   ${alphabet_list}
+    @{element_texts}=    Create List
+    FOR    ${alphabet_locator}     IN    ${alphabet_locator}
+    ${text}=    Get Text    ${alphabet_locator}
+    ${text}=    Evaluate    $text.replace('\\n', '')   # Remove newline characters
+    ${element_texts}=    Evaluate    ${element_texts} + [$text]
+    Log to console    ${alphabet_locator.text}
+    END
     ${sorted_texts}=    Evaluate    sorted($element_texts)
     Log to console    Sorted List: ${sorted_texts}
     Should be equal    ${element_texts}    ${sorted_texts}

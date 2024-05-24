@@ -9,13 +9,17 @@ Search a Hotel
     Wait Until Element Is Visible     ${destination}
     ${overlay_present}=    Run Keyword And Return Status    Check Overlay Present
     Run Keyword If    ${overlay_present}    Press Keycode    4  # Press back button if overlay present
-    Sleep    4s
+    Wait Until Element Is Visible    ${destination}
+    Sleep    5s
     Destination
-    Wait Until Element Is Visible      ${country_name}
+    Sleep    20s
     Enter country
-    Wait Until Element Is Visible     ${select_city_from_drop_down}
+    Log to console    Country name entered: ${country_name}
+    Sleep    5s
+    Wait Until Element Is Visible    ${select_city_from_drop_down}
     Select city
-    Wait Until Element Is Visible      ${date_picker}
+    Wait Until Element Is Visible    ${date_picker}
     Date picker
-    Wait Until Element Is Visible     ${search}
+    Wait Until Element Is Visible    ${search}
     Search
+    Close Application

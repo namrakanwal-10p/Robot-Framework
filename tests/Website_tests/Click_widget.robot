@@ -11,17 +11,16 @@ Select birth date from date picker
 
     Start testcase for chrome
     Click on widget
-    execute javascript    window.scrollTo(0,500)
+    Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
     Wait Until Element Is Visible    ${Select_Date_field}
     Select_Date_field
     Wait Until Element Is Visible    ${Select_month}
     Select month
-    execute javascript    window.scrollTo(0,500)
+    Scroll To Percentage    50    # Scroll down by another 50% of the screen height
     Click on month
     Wait Until Element Is Visible    ${Click_on_year}
     Click on year
     Wait Until Element Is Visible    ${Select_year}
     Select year
     Finish testcase
-
