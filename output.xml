@@ -1,142 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-05-23T11:02:42.839603" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-05-24T16:00:41.764587" rpa="false" schemaversion="5">
 <suite id="s1" name="Interaction widget" source="C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\tests\Website_tests\Interaction_widget.robot">
 <test id="s1-t1" name="Interaction of Sorting" line="8">
 <kw name="Start testcase for chrome" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:43.081556" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2024-05-24T16:00:42.027587" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>${url2}</arg>
 <arg>${browser_chrome}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-23T11:02:43.080503" elapsed="9.277528"/>
+<status status="PASS" start="2024-05-24T16:00:42.026582" elapsed="52.266859"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.358031" elapsed="0.052074"/>
+<status status="PASS" start="2024-05-24T16:01:34.293441" elapsed="0.251001"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:02:43.079453" elapsed="9.331713"/>
+<status status="PASS" start="2024-05-24T16:00:42.026582" elapsed="52.517860"/>
 </kw>
 <kw name="Scroll To Percentage" owner="CommonFunctionality">
 <kw name="Get Screen Height" owner="CommonFunctionality">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.424055" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:34.550441" level="INFO">Executing JavaScript:
 return window.innerHeight
 Without any arguments.</msg>
-<msg time="2024-05-23T11:02:52.436068" level="INFO">${height} = 686</msg>
+<msg time="2024-05-24T16:01:34.577441" level="INFO">${height} = 686</msg>
 <var>${height}</var>
 <arg>return window.innerHeight</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.423004" elapsed="0.013064"/>
+<status status="PASS" start="2024-05-24T16:01:34.547447" elapsed="0.029994"/>
 </kw>
 <return>
 <value>${height}</value>
-<status status="PASS" start="2024-05-23T11:02:52.436623" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T16:01:34.577441" elapsed="0.000000"/>
 </return>
-<msg time="2024-05-23T11:02:52.437097" level="INFO">${screen_height} = 686</msg>
+<msg time="2024-05-24T16:01:34.578441" level="INFO">${screen_height} = 686</msg>
 <var>${screen_height}</var>
-<status status="PASS" start="2024-05-23T11:02:52.421894" elapsed="0.015203"/>
+<status status="PASS" start="2024-05-24T16:01:34.547447" elapsed="0.030994"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:02:52.438155" level="INFO">${scroll_position} = 343.0</msg>
+<msg time="2024-05-24T16:01:34.578441" level="INFO">${scroll_position} = 343.0</msg>
 <var>${scroll_position}</var>
 <arg>${screen_height} * ${percentage} / 100</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.437097" elapsed="0.001058"/>
+<status status="PASS" start="2024-05-24T16:01:34.578441" elapsed="0.001000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.438656" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:34.580441" level="INFO">Executing JavaScript:
 window.scrollTo(0, 343.0)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, ${scroll_position})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.438656" elapsed="0.013644"/>
+<status status="PASS" start="2024-05-24T16:01:34.579441" elapsed="0.013000"/>
 </kw>
 <arg>50</arg>
-<status status="PASS" start="2024-05-23T11:02:52.420844" elapsed="0.031456"/>
+<status status="PASS" start="2024-05-24T16:01:34.546441" elapsed="0.046000"/>
 </kw>
 <kw name="Click on interaction" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.455516" level="INFO">Clicking element 'CSS:#app &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div:nth-child(3)'.</msg>
+<msg time="2024-05-24T16:01:34.594441" level="INFO">Clicking element 'CSS:#app &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div:nth-child(3)'.</msg>
 <arg>${interaction_widget}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.454443" elapsed="0.202626"/>
+<status status="PASS" start="2024-05-24T16:01:34.594441" elapsed="0.261001"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:02:52.453358" elapsed="0.203711"/>
+<status status="PASS" start="2024-05-24T16:01:34.593443" elapsed="0.261999"/>
 </kw>
 <kw name="Scroll To Percentage" owner="CommonFunctionality">
 <kw name="Get Screen Height" owner="CommonFunctionality">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.665749" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:34.859441" level="INFO">Executing JavaScript:
 return window.innerHeight
 Without any arguments.</msg>
-<msg time="2024-05-23T11:02:52.675909" level="INFO">${height} = 686</msg>
+<msg time="2024-05-24T16:01:34.873443" level="INFO">${height} = 686</msg>
 <var>${height}</var>
 <arg>return window.innerHeight</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.665749" elapsed="0.010209"/>
+<status status="PASS" start="2024-05-24T16:01:34.858441" elapsed="0.015002"/>
 </kw>
 <return>
 <value>${height}</value>
-<status status="PASS" start="2024-05-23T11:02:52.676506" elapsed="0.000152"/>
+<status status="PASS" start="2024-05-24T16:01:34.874442" elapsed="0.000000"/>
 </return>
-<msg time="2024-05-23T11:02:52.676792" level="INFO">${screen_height} = 686</msg>
+<msg time="2024-05-24T16:01:34.874442" level="INFO">${screen_height} = 686</msg>
 <var>${screen_height}</var>
-<status status="PASS" start="2024-05-23T11:02:52.665189" elapsed="0.012105"/>
+<status status="PASS" start="2024-05-24T16:01:34.857442" elapsed="0.017000"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:02:52.678569" level="INFO">${scroll_position} = 137.2</msg>
+<msg time="2024-05-24T16:01:34.875453" level="INFO">${scroll_position} = 137.2</msg>
 <var>${scroll_position}</var>
 <arg>${screen_height} * ${percentage} / 100</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.677596" elapsed="0.000973"/>
+<status status="PASS" start="2024-05-24T16:01:34.874442" elapsed="0.001011"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.680377" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:34.876444" level="INFO">Executing JavaScript:
 window.scrollTo(0, 137.2)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, ${scroll_position})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.679741" elapsed="0.007956"/>
+<status status="PASS" start="2024-05-24T16:01:34.875453" elapsed="0.009989"/>
 </kw>
 <arg>20</arg>
-<status status="PASS" start="2024-05-23T11:02:52.663022" elapsed="0.024675"/>
+<status status="PASS" start="2024-05-24T16:01:34.856443" elapsed="0.028999"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${click_on_sortable}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.687697" elapsed="0.031423"/>
+<status status="PASS" start="2024-05-24T16:01:34.887443" elapsed="0.045015"/>
 </kw>
 <kw name="click_on_sortable" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.720184" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[5]/div/ul/li[1]'.</msg>
+<msg time="2024-05-24T16:01:34.934444" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[5]/div/ul/li[1]'.</msg>
 <arg>${click_on_sortable}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.720184" elapsed="0.058482"/>
+<status status="PASS" start="2024-05-24T16:01:34.933442" elapsed="0.122000"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:02:52.720184" elapsed="0.059562"/>
+<status status="PASS" start="2024-05-24T16:01:34.933442" elapsed="0.122000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${alphabet_list}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.780804" elapsed="0.027792"/>
+<status status="PASS" start="2024-05-24T16:01:35.056441" elapsed="0.116000"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.817216" level="INFO">${alphabet_locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session="9c4057a3015b90ad01a79a5f41c34d00", element="f.C3A66215D37CEBC2E8C7036B16DD28A1.d.AEDBC2DAA7BE25D29ED175568CFD74DE.e.40")&gt;</msg>
+<msg time="2024-05-24T16:01:35.276442" level="INFO">${alphabet_locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session="16c9b1a1e4d3d91783d86f23ec19d411", element="f.64771649FCE14D6597C1159F654344D8.d.0C9B7C051C4C79397111AB13F8A41EB7.e.37")&gt;</msg>
 <var>${alphabet_locator}</var>
 <arg>${alphabet_list}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.809409" elapsed="0.007807"/>
+<status status="PASS" start="2024-05-24T16:01:35.191442" elapsed="0.085999"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2024-05-23T11:02:52.818247" level="INFO">@{element_texts} = [ ]</msg>
+<msg time="2024-05-24T16:01:35.287442" level="INFO">@{element_texts} = [ ]</msg>
 <var>@{element_texts}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.818247" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T16:01:35.287442" elapsed="0.001000"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:52.840179" level="INFO">${text} = One
+<msg time="2024-05-24T16:01:35.326442" level="INFO">${text} = One
 Two
 Three
 Four
@@ -145,260 +145,260 @@ Six</msg>
 <var>${text}</var>
 <arg>${alphabet_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.819309" elapsed="0.020870"/>
+<status status="PASS" start="2024-05-24T16:01:35.292441" elapsed="0.034001"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:02:52.847269" level="INFO">${text} = OneTwoThreeFourFiveSix</msg>
+<msg time="2024-05-24T16:01:35.332440" level="INFO">${text} = OneTwoThreeFourFiveSix</msg>
 <var>${text}</var>
 <arg>$text.replace('\\n', '')</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.840720" elapsed="0.006549"/>
+<status status="PASS" start="2024-05-24T16:01:35.326442" elapsed="0.005998"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:02:52.848480" level="INFO">${element_texts} = ['OneTwoThreeFourFiveSix']</msg>
+<msg time="2024-05-24T16:01:35.333441" level="INFO">${element_texts} = ['OneTwoThreeFourFiveSix']</msg>
 <var>${element_texts}</var>
 <arg>${element_texts} + [$text]</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.847269" elapsed="0.001211"/>
+<status status="PASS" start="2024-05-24T16:01:35.333441" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${alphabet_locator.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.848480" elapsed="0.016980"/>
+<status status="PASS" start="2024-05-24T16:01:35.334442" elapsed="0.037001"/>
 </kw>
-<var name="${alphabet_locator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="9c4057a3015b90ad01a79a5f41c34d00", element="f.C3A66215D37CEBC2E8C7036B16DD28A1.d.AEDBC2DAA7BE25D29ED175568CFD74DE.e.40")&gt;</var>
-<status status="PASS" start="2024-05-23T11:02:52.819309" elapsed="0.046151"/>
+<var name="${alphabet_locator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="16c9b1a1e4d3d91783d86f23ec19d411", element="f.64771649FCE14D6597C1159F654344D8.d.0C9B7C051C4C79397111AB13F8A41EB7.e.37")&gt;</var>
+<status status="PASS" start="2024-05-24T16:01:35.292441" elapsed="0.079002"/>
 </iter>
 <var>${alphabet_locator}</var>
 <value>${alphabet_locator}</value>
-<status status="PASS" start="2024-05-23T11:02:52.818247" elapsed="0.047213"/>
+<status status="PASS" start="2024-05-24T16:01:35.291443" elapsed="0.080000"/>
 </for>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:02:52.866514" level="INFO">${sorted_texts} = ['OneTwoThreeFourFiveSix']</msg>
+<msg time="2024-05-24T16:01:35.374444" level="INFO">${sorted_texts} = ['OneTwoThreeFourFiveSix']</msg>
 <var>${sorted_texts}</var>
 <arg>sorted($element_texts)</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.865460" elapsed="0.001054"/>
+<status status="PASS" start="2024-05-24T16:01:35.373444" elapsed="0.001000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Sorted List: ${sorted_texts}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.866514" elapsed="0.001064"/>
+<status status="PASS" start="2024-05-24T16:01:35.375442" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${element_texts}</arg>
 <arg>${sorted_texts}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.868580" elapsed="0.000052"/>
+<status status="PASS" start="2024-05-24T16:01:35.376441" elapsed="0.000000"/>
 </kw>
 <kw name="Finish testcase" owner="CommonFunctionality">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-23T11:02:52.869697" elapsed="2.340199"/>
+<status status="PASS" start="2024-05-24T16:01:35.377442" elapsed="3.002001"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:02:52.868632" elapsed="2.341264"/>
+<status status="PASS" start="2024-05-24T16:01:35.377442" elapsed="3.002001"/>
 </kw>
 <doc>This case should verify the list is sorted</doc>
 <tag>Functional</tag>
-<status status="PASS" start="2024-05-23T11:02:43.078974" elapsed="12.133453"/>
+<status status="PASS" start="2024-05-24T16:00:42.025582" elapsed="56.354860"/>
 </test>
 <test id="s1-t2" name="Grid Test Element Presence" line="32">
 <kw name="Start testcase for chrome" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:02:55.219009" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
+<msg time="2024-05-24T16:01:38.382444" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
 <arg>${url2}</arg>
 <arg>${browser_chrome}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-23T11:02:55.217973" elapsed="18.048179"/>
+<status status="PASS" start="2024-05-24T16:01:38.382444" elapsed="4.061000"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.267228" elapsed="0.035716"/>
+<status status="PASS" start="2024-05-24T16:01:42.444445" elapsed="11.509257"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:02:55.216923" elapsed="18.086601"/>
+<status status="PASS" start="2024-05-24T16:01:38.381443" elapsed="15.573259"/>
 </kw>
 <kw name="Scroll To Percentage" owner="CommonFunctionality">
 <kw name="Get Screen Height" owner="CommonFunctionality">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.306178" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:53.957702" level="INFO">Executing JavaScript:
 return window.innerHeight
 Without any arguments.</msg>
-<msg time="2024-05-23T11:03:13.323188" level="INFO">${height} = 686</msg>
+<msg time="2024-05-24T16:01:53.984702" level="INFO">${height} = 686</msg>
 <var>${height}</var>
 <arg>return window.innerHeight</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.306178" elapsed="0.018027"/>
+<status status="PASS" start="2024-05-24T16:01:53.957702" elapsed="0.027000"/>
 </kw>
 <return>
 <value>${height}</value>
-<status status="PASS" start="2024-05-23T11:03:13.324302" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T16:01:53.985702" elapsed="0.000000"/>
 </return>
-<msg time="2024-05-23T11:03:13.324302" level="INFO">${screen_height} = 686</msg>
+<msg time="2024-05-24T16:01:53.985702" level="INFO">${screen_height} = 686</msg>
 <var>${screen_height}</var>
-<status status="PASS" start="2024-05-23T11:03:13.305174" elapsed="0.019128"/>
+<status status="PASS" start="2024-05-24T16:01:53.956702" elapsed="0.029000"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:03:13.325872" level="INFO">${scroll_position} = 343.0</msg>
+<msg time="2024-05-24T16:01:53.986702" level="INFO">${scroll_position} = 343.0</msg>
 <var>${scroll_position}</var>
 <arg>${screen_height} * ${percentage} / 100</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.325371" elapsed="0.000501"/>
+<status status="PASS" start="2024-05-24T16:01:53.986702" elapsed="0.000000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.330229" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:53.988703" level="INFO">Executing JavaScript:
 window.scrollTo(0, 343.0)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, ${scroll_position})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.326358" elapsed="0.017554"/>
+<status status="PASS" start="2024-05-24T16:01:53.987702" elapsed="0.009001"/>
 </kw>
 <arg>50</arg>
-<status status="PASS" start="2024-05-23T11:03:13.304674" elapsed="0.039238"/>
+<status status="PASS" start="2024-05-24T16:01:53.955702" elapsed="0.041001"/>
 </kw>
 <kw name="Click on interaction" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.346075" level="INFO">Clicking element 'CSS:#app &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div:nth-child(3)'.</msg>
+<msg time="2024-05-24T16:01:53.999703" level="INFO">Clicking element 'CSS:#app &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div:nth-child(3)'.</msg>
 <arg>${interaction_widget}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.344990" elapsed="0.209664"/>
+<status status="PASS" start="2024-05-24T16:01:53.998702" elapsed="0.226000"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:03:13.344990" elapsed="0.209664"/>
+<status status="PASS" start="2024-05-24T16:01:53.997703" elapsed="0.226999"/>
 </kw>
 <kw name="Scroll To Percentage" owner="CommonFunctionality">
 <kw name="Get Screen Height" owner="CommonFunctionality">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.564244" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:54.230702" level="INFO">Executing JavaScript:
 return window.innerHeight
 Without any arguments.</msg>
-<msg time="2024-05-23T11:03:13.576264" level="INFO">${height} = 686</msg>
+<msg time="2024-05-24T16:01:54.239701" level="INFO">${height} = 686</msg>
 <var>${height}</var>
 <arg>return window.innerHeight</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.563660" elapsed="0.012659"/>
+<status status="PASS" start="2024-05-24T16:01:54.229701" elapsed="0.010000"/>
 </kw>
 <return>
 <value>${height}</value>
-<status status="PASS" start="2024-05-23T11:03:13.576319" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T16:01:54.239701" elapsed="0.000000"/>
 </return>
-<msg time="2024-05-23T11:03:13.576835" level="INFO">${screen_height} = 686</msg>
+<msg time="2024-05-24T16:01:54.239701" level="INFO">${screen_height} = 686</msg>
 <var>${screen_height}</var>
-<status status="PASS" start="2024-05-23T11:03:13.563160" elapsed="0.013675"/>
+<status status="PASS" start="2024-05-24T16:01:54.228702" elapsed="0.010999"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:03:13.577862" level="INFO">${scroll_position} = 343.0</msg>
+<msg time="2024-05-24T16:01:54.240702" level="INFO">${scroll_position} = 343.0</msg>
 <var>${scroll_position}</var>
 <arg>${screen_height} * ${percentage} / 100</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.577374" elapsed="0.000488"/>
+<status status="PASS" start="2024-05-24T16:01:54.240702" elapsed="0.000000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.578933" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:54.241702" level="INFO">Executing JavaScript:
 window.scrollTo(0, 343.0)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, ${scroll_position})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.577862" elapsed="0.007206"/>
+<status status="PASS" start="2024-05-24T16:01:54.241702" elapsed="0.016003"/>
 </kw>
 <arg>50</arg>
-<status status="PASS" start="2024-05-23T11:03:13.562260" elapsed="0.023261"/>
+<status status="PASS" start="2024-05-24T16:01:54.227703" elapsed="0.030002"/>
 </kw>
 <kw name="click_on_sortable" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.586580" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[5]/div/ul/li[1]'.</msg>
+<msg time="2024-05-24T16:01:54.259703" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[5]/div/ul/li[1]'.</msg>
 <arg>${click_on_sortable}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.585521" elapsed="0.077148"/>
+<status status="PASS" start="2024-05-24T16:01:54.258701" elapsed="0.127002"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:03:13.585521" elapsed="0.077148"/>
+<status status="PASS" start="2024-05-24T16:01:54.258701" elapsed="0.127002"/>
 </kw>
 <kw name="Click on grid" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.664587" level="INFO">Clicking element 'CSS:#demo-tab-grid'.</msg>
+<msg time="2024-05-24T16:01:54.387704" level="INFO">Clicking element 'CSS:#demo-tab-grid'.</msg>
 <arg>${Click_grid}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.663814" elapsed="0.071435"/>
+<status status="PASS" start="2024-05-24T16:01:54.387704" elapsed="0.148999"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:03:13.663814" elapsed="0.071435"/>
+<status status="PASS" start="2024-05-24T16:01:54.386702" elapsed="0.150001"/>
 </kw>
 <kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
 <doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.736188" elapsed="0.000504"/>
+<status status="PASS" start="2024-05-24T16:01:54.537702" elapsed="0.000000"/>
 </kw>
 <kw name="Scroll To Percentage" owner="CommonFunctionality">
 <kw name="Get Screen Height" owner="CommonFunctionality">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.742593" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:54.544705" level="INFO">Executing JavaScript:
 return window.innerHeight
 Without any arguments.</msg>
-<msg time="2024-05-23T11:03:13.748560" level="INFO">${height} = 686</msg>
+<msg time="2024-05-24T16:01:54.554703" level="INFO">${height} = 686</msg>
 <var>${height}</var>
 <arg>return window.innerHeight</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.742093" elapsed="0.006467"/>
+<status status="PASS" start="2024-05-24T16:01:54.543702" elapsed="0.012001"/>
 </kw>
 <return>
 <value>${height}</value>
-<status status="PASS" start="2024-05-23T11:03:13.749083" elapsed="0.000022"/>
+<status status="PASS" start="2024-05-24T16:01:54.555703" elapsed="0.000000"/>
 </return>
-<msg time="2024-05-23T11:03:13.749105" level="INFO">${screen_height} = 686</msg>
+<msg time="2024-05-24T16:01:54.556702" level="INFO">${screen_height} = 686</msg>
 <var>${screen_height}</var>
-<status status="PASS" start="2024-05-23T11:03:13.738871" elapsed="0.010234"/>
+<status status="PASS" start="2024-05-24T16:01:54.540704" elapsed="0.015998"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-23T11:03:13.749105" level="INFO">${scroll_position} = 343.0</msg>
+<msg time="2024-05-24T16:01:54.557702" level="INFO">${scroll_position} = 343.0</msg>
 <var>${scroll_position}</var>
 <arg>${screen_height} * ${percentage} / 100</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.749105" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-24T16:01:54.556702" elapsed="0.001000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:13.750167" level="INFO">Executing JavaScript:
+<msg time="2024-05-24T16:01:54.558702" level="INFO">Executing JavaScript:
 window.scrollTo(0, 343.0)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, ${scroll_position})</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.749105" elapsed="0.008635"/>
+<status status="PASS" start="2024-05-24T16:01:54.557702" elapsed="0.033007"/>
 </kw>
 <arg>50</arg>
-<status status="PASS" start="2024-05-23T11:03:13.737780" elapsed="0.019960"/>
+<status status="PASS" start="2024-05-24T16:01:54.539702" elapsed="0.052002"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${fifth_element}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T11:03:13.758307" elapsed="0.380918"/>
+<status status="PASS" start="2024-05-24T16:01:54.592704" elapsed="0.047000"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:14.168838" level="INFO">${source_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e397d29af15d86caaa8ab564117ff80a", element="f.CDBAA986233765C436719E857F5B0C41.d.A63BD8ABD6DD8B2E977FFE76B607F87E.e.41")&gt;</msg>
+<msg time="2024-05-24T16:01:54.655702" level="INFO">${source_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a86c3d304a2bb0f14d12d1a6067d99ad", element="f.205966F7AE5786C6EC3D2D0291B2B908.d.8F1DC602D2FF6F97656CA42BFE076466.e.22")&gt;</msg>
 <var>${source_element}</var>
 <arg>${fifth_element}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:03:14.140820" elapsed="0.028018"/>
+<status status="PASS" start="2024-05-24T16:01:54.642704" elapsed="0.012998"/>
 </kw>
 <kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-05-23T11:03:14.228289" level="INFO">${target_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="e397d29af15d86caaa8ab564117ff80a", element="f.CDBAA986233765C436719E857F5B0C41.d.A63BD8ABD6DD8B2E977FFE76B607F87E.e.51")&gt;</msg>
+<msg time="2024-05-24T16:01:54.673701" level="INFO">${target_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a86c3d304a2bb0f14d12d1a6067d99ad", element="f.205966F7AE5786C6EC3D2D0291B2B908.d.8F1DC602D2FF6F97656CA42BFE076466.e.23")&gt;</msg>
 <var>${target_element}</var>
 <arg>${nineth_element}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-05-23T11:03:14.169908" elapsed="0.058381"/>
+<status status="PASS" start="2024-05-24T16:01:54.656703" elapsed="0.016998"/>
 </kw>
 <kw name="Drag And Drop" owner="SeleniumLibrary">
 <arg>${source_element}</arg>
 <arg>${target_element}</arg>
 <doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-05-23T11:03:14.229379" elapsed="0.622026"/>
+<status status="PASS" start="2024-05-24T16:01:54.674702" elapsed="0.694267"/>
 </kw>
 <kw name="Finish testcase" owner="CommonFunctionality">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-23T11:03:14.852500" elapsed="2.469525"/>
+<status status="PASS" start="2024-05-24T16:01:55.373973" elapsed="3.171003"/>
 </kw>
-<status status="PASS" start="2024-05-23T11:03:14.851405" elapsed="2.471737"/>
+<status status="PASS" start="2024-05-24T16:01:55.372968" elapsed="3.173009"/>
 </kw>
 <doc>This case drag the fifth element with nine</doc>
 <tag>Functional</tag>
-<status status="PASS" start="2024-05-23T11:02:55.214645" elapsed="22.110655"/>
+<status status="PASS" start="2024-05-24T16:01:38.381443" elapsed="20.165534"/>
 </test>
-<status status="PASS" start="2024-05-23T11:02:42.843154" elapsed="34.486014"/>
+<status status="PASS" start="2024-05-24T16:00:41.768582" elapsed="76.780395"/>
 </suite>
 <statistics>
 <total>
@@ -412,10 +412,9 @@ Without any arguments.</msg>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-23T11:02:42.833113" level="ERROR">Executing model modifier 'module' failed: AttributeError: module 'MyVisitor' has no attribute 'visit_suite'
+<msg time="2024-05-24T16:00:41.758588" level="ERROR">Executing model modifier 'module' failed: AttributeError: module 'MyVisitor' has no attribute 'visit_suite'
 Traceback (most recent call last):
   None
 AttributeError: module 'MyVisitor' has no attribute 'visit_suite'</msg>
-<msg time="2024-05-23T11:02:43.067073" level="WARN">Error in file 'C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\resources\CommonFunctionality.robot' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
