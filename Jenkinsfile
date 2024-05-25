@@ -1,13 +1,10 @@
 pipeline {
     agent any
 
-    options {
-        timeout(time: 30, unit: 'MINUTES')  // Timeout for the entire pipeline
-    }
-
     stages {
         stage('Checkout') {
             steps {
+                // Increase Git checkout timeout to 10 minutes
                 script {
                     def scmVars = checkout(
                         [$class: 'GitSCM', 
@@ -23,13 +20,15 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                // Install dependencies if needed (e.g., Python packages)
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh 'robot --outputdir results --loglevel TRACE tests/Website_tests/'
+                // Execute your Robot Framework script
+                bat 'robot --outputdir results --loglevel TRACE tests/Website_tests/'
             }
         }
     }
