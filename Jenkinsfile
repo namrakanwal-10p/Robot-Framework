@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Fetch code from Git repository
-                git url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'your-credentials-id'
+                git url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra'
             }
         }
 
