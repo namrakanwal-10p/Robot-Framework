@@ -28,10 +28,10 @@ pipeline {
         }
 
         stage('Run Tests') {
-    steps {
-        bat "robot --variable BROWSER:%BROWSER% --variable OPTIONS:headless --outputdir results --loglevel TRACE tests/Website_tests/Click_alerts"
-    }
-}
+            steps {
+                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests/Website_tests/Click_alerts.robot"
+            }
+        }
     }
 
     post {
