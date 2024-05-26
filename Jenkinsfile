@@ -29,7 +29,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat "robot --variable BROWSER:%BROWSER% --variable OPTIONS:headless --outputdir results --loglevel DEBUG tests/Website_tests/SuiteExecutor/TestSuite.robot"
+                bat "robot --variable BROWSER:%BROWSER% --variable OPTIONS:headless --outputdir results --loglevel DEBUG tests/Website_tests/SuiteExecuter/TestSuite.robot"
             }
         }
     }
