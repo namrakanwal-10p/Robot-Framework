@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        BROWSER = 'chrome'  // Change to 'firefox' if needed
+        BROWSER = 'firefox'  // Change to 'firefox' if needed
     }
 
     stages {
