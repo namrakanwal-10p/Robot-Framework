@@ -28,7 +28,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Execute your Robot Framework script
-                bat 'robot -d results --loglevel TRACE tests/SuiteExecutor/Testsuite.robot'
+              bat 'robot --outputdir results --loglevel TRACE /SuiteExecutor/Testsuite.robot'
 '
             }
         }
