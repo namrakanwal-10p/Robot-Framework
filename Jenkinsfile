@@ -11,7 +11,7 @@ pipeline {
                          branches: [[name: '*/main']],
                          doGenerateSubmoduleConfigurations: false, 
                          extensions: [[$class: 'CloneOption', timeout: 10]],
-                         userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'your-credentials-id']]
+                         userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
                         ]
                     )
                 }
