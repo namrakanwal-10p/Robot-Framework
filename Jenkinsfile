@@ -1,10 +1,13 @@
 pipeline {
     agent any
 
+    environment {
+        BROWSER = 'chrome'  // Or 'firefox' depending on your setup
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                // Increase Git checkout timeout to 10 minutes
                 script {
                     def scmVars = checkout(
                         [$class: 'GitSCM', 
@@ -20,16 +23,28 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                // Install dependencies if needed (e.g., Python packages)
                 bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
-            steps {
-                // Execute your Robot Framework script
-                bat 'robot --outputdir results --loglevel TRACE tests/Website_tests/Click_alerts.robot'
-            }
+    steps {
+        bat "robot --variable BROWSER:%BROWSER% --variable OPTIONS:headless --outputdir results --loglevel TRACE tests/Website_tests/Click_alerts"
+    }
+}
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'results/**/*', allowEmptyArchive: true
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: false,
+                keepAll: true,
+                reportDir: 'results',
+                reportFiles: 'log.html,report.html',
+                reportName: 'Robot Framework Test Report'
+            ])
         }
     }
 }
