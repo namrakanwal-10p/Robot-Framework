@@ -25,10 +25,9 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                // Execute your Robot Framework script
-                bat 'robot --outputdir results --loglevel TRACE tests/Website_tests/SuiteExecutor/Testsuite.robot'
+       stage('Run Tests') {
+    steps {
+        bat "robot --variable BROWSER:%BROWSER% --variable OPTIONS:headless --outputdir results --loglevel TRACE tests/Website_tests/"
             }
         }
     }
