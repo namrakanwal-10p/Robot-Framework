@@ -29,7 +29,6 @@ pipeline {
             steps {
                 // Execute your Robot Framework script
               bat 'robot --outputdir results --loglevel TRACE /SuiteExecutor/Testsuite.robot'
-'
             }
         }
     }
