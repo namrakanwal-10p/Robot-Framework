@@ -21,21 +21,40 @@ pipeline {
             }
         }
 
+        stage('Verify Directory Structure') {
+            steps {
+                echo 'Checking the tests directory structure...'
+                bat 'dir tests'
+                bat 'dir tests\\Website_tests'
+                bat 'dir tests\\Website_tests\\Click_alerts'
+            }
+        }
+
+        stage('Verify Robot Framework Installation') {
+            steps {
+                echo 'Verifying Robot Framework installation...'
+                bat 'robot --version'
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
+                echo 'Installing dependencies...'
                 bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests/Website_tests/Click_alerts.robot"
+                echo 'Running tests...'
+                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests/Website_tests/Click_Alerts.robot"
             }
         }
     }
 
     post {
         always {
+            echo 'Archiving artifacts and publishing reports...'
             archiveArtifacts artifacts: 'results/**/*', allowEmptyArchive: true
             publishHTML(target: [
                 allowMissing: false,
