@@ -28,8 +28,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Execute your Robot Framework script
-                bat 'robot -d results --loglevel TRACE tests/Website_tests/tests/Click_widget.robot'
-'
+                bat 'robot --outputdir results --loglevel TRACE tests/Website_tests/Click_alerts.robot'
             }
         }
     }
