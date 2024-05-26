@@ -26,7 +26,6 @@ pipeline {
                 echo 'Checking the tests directory structure...'
                 bat 'dir tests'
                 bat 'dir tests\\Website_tests'
-                bat 'dir tests\\Website_tests\\Click_alerts'
             }
         }
 
@@ -47,7 +46,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests/Website_tests/Click_Alerts.robot"
+                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests\\Website_tests\\Click_alerts.robot"
             }
         }
     }
