@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        BROWSER = 'chrome'  // Or 'firefox' depending on your setup
+        BROWSER = 'chrome'  // Change to 'firefox' if needed
     }
 
     stages {
         stage('Checkout') {
             steps {
                 script {
-                    def scmVars = checkout(
+                    checkout(
                         [$class: 'GitSCM', 
                          branches: [[name: '*/main']],
                          doGenerateSubmoduleConfigurations: false, 
@@ -46,7 +46,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests\\Website_tests\\Click_alerts.robot"
+                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests\\Website_tests"
             }
         }
     }
