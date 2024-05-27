@@ -62,7 +62,7 @@ Click Widget Tests
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
 
-    Wait until element is visible     ${interaction_widget}
+    Wait until element is visible     ${interaction_widget}    5s
     Click on interaction
     Scroll To Percentage    20
     Wait until element is visible    ${click_on_sortable}
