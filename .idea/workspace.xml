@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="197892b5-5b6c-4ccb-9c8e-0fbcbcc19833" name="Changes" comment="website &amp; mobile code">
-      <change afterPath="$PROJECT_DIR$/geckodriver-1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geckodriver-2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geckodriver-3.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geckodriver-4.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pabot_results/3/robot_stderr.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pabot_results/3/robot_stdout.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pabotsuitenames" beforeDir="false" afterPath="$PROJECT_DIR$/.pabotsuitenames" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pabot_results/0/robot_stderr.out" beforeDir="false" afterPath="$PROJECT_DIR$/pabot_results/0/robot_stderr.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pabot_results/0/robot_stdout.out" beforeDir="false" afterPath="$PROJECT_DIR$/pabot_results/0/robot_stdout.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pabot_results/1/robot_stderr.out" beforeDir="false" afterPath="$PROJECT_DIR$/pabot_results/1/robot_stderr.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pabot_results/1/robot_stdout.out" beforeDir="false" afterPath="$PROJECT_DIR$/pabot_results/1/robot_stdout.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pabot_results/2/robot_stderr.out" beforeDir="false" afterPath="$PROJECT_DIR$/pabot_results/2/robot_stderr.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pabot_results/2/robot_stdout.out" beforeDir="false" afterPath="$PROJECT_DIR$/pabot_results/2/robot_stdout.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Website_tests/SuiteExecuter/Testsuite.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Website_tests/SuiteExecuter/Testsuite.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
