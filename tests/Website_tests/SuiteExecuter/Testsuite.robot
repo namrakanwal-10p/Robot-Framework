@@ -15,7 +15,7 @@ ${DELAY}    2s   # Define the delay duration
 Open My Browser
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
-    sleep     15s
+    sleep     20s
 
 Reset Browser State
     Go To    ${URL}
@@ -29,7 +29,7 @@ Add Delay
 *** Test Cases ***
 Click Alerts Tests
     [Documentation]    Test clicking alert buttons
-    Sleep    10s
+
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
@@ -39,7 +39,7 @@ Click Alerts Tests
 
 Click Widget Tests
     [Documentation]    Test clicking widget elements
-    Sleep    5s
+
     Click on widget
     Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
@@ -56,7 +56,7 @@ Click Widget Tests
 
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
-    Sleep    5s
+
     Scroll To Percentage    50
     Click on interaction
     Scroll To Percentage    20
