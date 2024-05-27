@@ -8,7 +8,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Increase Git checkout timeout to 10 minutes
                 script {
                     def scmVars = checkout(
                         [$class: 'GitSCM',
@@ -39,7 +38,6 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                // Install dependencies if needed (e.g., Python packages)
                 echo 'Installing dependencies...'
                 bat 'pip install -r requirements.txt'
             }
@@ -48,7 +46,15 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests\\Website_tests\\SuiteExecuter\\Testsuite.robot"
+                script {
+                    try {
+                        bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests\\Website_tests\\SuiteExecuter\\Testsuite.robot"
+                    } catch (Exception e) {
+                        echo 'Error during test execution'
+                        echo e.toString()
+                        currentBuild.result = 'FAILURE'
+                    }
+                }
             }
         }
     }
