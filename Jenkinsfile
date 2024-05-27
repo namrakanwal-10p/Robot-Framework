@@ -2,28 +2,21 @@ pipeline {
     agent any
 
     environment {
-        BROWSER = 'chrome'  // Set the browser to use for tests, change to 'firefox' if needed
+        BROWSER = 'chrome'  // Change to 'firefox' if needed
     }
 
     stages {
         stage('Checkout') {
             steps {
                 script {
-                    try {
-                        def scmVars = checkout(
-                            [$class: 'GitSCM',
-                             branches: [[name: '*/main']],
-                             doGenerateSubmoduleConfigurations: false,
-                             extensions: [[$class: 'CloneOption', timeout: 10]],
-                             userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
-                            ]
-                        )
-                    } catch (Exception e) {
-                        echo 'Error during checkout'
-                        echo e.toString()
-                        currentBuild.result = 'FAILURE'
-                        error 'Checkout failed'
-                    }
+                    checkout(
+                        [$class: 'GitSCM',
+                         branches: [[name: '*/main']],
+                         doGenerateSubmoduleConfigurations: false,
+                         extensions: [[$class: 'CloneOption', timeout: 10]],
+                         userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
+                        ]
+                    )
                 }
             }
         }
@@ -46,32 +39,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies...'
-                script {
-                    try {
-                        bat 'pip install -r requirements.txt'
-                    } catch (Exception e) {
-                        echo 'Error during dependencies installation'
-                        echo e.toString()
-                        currentBuild.result = 'FAILURE'
-                        error 'Dependency installation failed'
-                    }
-                }
+                bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                script {
-                    try {
-                        bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests\\Website_tests\\SuiteExecuter\\Testsuite.robot"
-                    } catch (Exception e) {
-                        echo 'Error during test execution'
-                        echo e.toString()
-                        currentBuild.result = 'FAILURE'
-                        error 'Test execution failed'
-                    }
-                }
+                bat "robot --variable BROWSER:%BROWSER% --outputdir results --loglevel TRACE tests/Website_tests/SuiteExecuter/Testsuite.robot"
             }
         }
     }
