@@ -9,14 +9,21 @@ pipeline {
         stage('Checkout') {
             steps {
                 script {
-                    def scmVars = checkout(
-                        [$class: 'GitSCM',
-                         branches: [[name: '*/main']],
-                         doGenerateSubmoduleConfigurations: false,
-                         extensions: [[$class: 'CloneOption', timeout: 10]],
-                         userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
-                        ]
-                    )
+                    try {
+                        def scmVars = checkout(
+                            [$class: 'GitSCM',
+                             branches: [[name: '*/main']],
+                             doGenerateSubmoduleConfigurations: false,
+                             extensions: [[$class: 'CloneOption', timeout: 10]],
+                             userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
+                            ]
+                        )
+                    } catch (Exception e) {
+                        echo 'Error during checkout'
+                        echo e.toString()
+                        currentBuild.result = 'FAILURE'
+                        error 'Checkout failed'
+                    }
                 }
             }
         }
@@ -39,7 +46,16 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies...'
-                bat 'pip install -r requirements.txt'
+                script {
+                    try {
+                        bat 'pip install -r requirements.txt'
+                    } catch (Exception e) {
+                        echo 'Error during dependencies installation'
+                        echo e.toString()
+                        currentBuild.result = 'FAILURE'
+                        error 'Dependency installation failed'
+                    }
+                }
             }
         }
 
@@ -53,6 +69,7 @@ pipeline {
                         echo 'Error during test execution'
                         echo e.toString()
                         currentBuild.result = 'FAILURE'
+                        error 'Test execution failed'
                     }
                 }
             }
