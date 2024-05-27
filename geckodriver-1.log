@@ -1,0 +1,17 @@
+1716548689554	geckodriver	INFO	Listening on 127.0.0.1:51747
+1716548692661	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51748" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NAMRA~1.KAN\\AppData\\Local\\Temp\\rust_mozprofilejurTEX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1716548694068	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1716548694234	Marionette	INFO	Listening on port 51761
+WebDriver BiDi listening on ws://127.0.0.1:51748
+Read port: 51761
+1716548694805	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51748/devtools/browser/4f59fe68-a0d3-4e0f-a467-8a64881b1eea
+1716548725241	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1716548748103	Marionette	INFO	Stopped listening on port 51761
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/shared/FormAutofillHandler.sys.mjs, line 78: TypeError: this.window is null

@@ -1,0 +1,16 @@
+1716554674128	geckodriver	INFO	Listening on 127.0.0.1:57873
+1716554677165	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57874" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NAMRA~1.KAN\\AppData\\Local\\Temp\\rust_mozprofileCEAl9Z"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1716554677854	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1716554678001	Marionette	INFO	Listening on port 57882
+WebDriver BiDi listening on ws://127.0.0.1:57874
+Read port: 57882
+1716554678374	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57874/devtools/browser/9d7cfcb0-65d1-46ec-83b3-f29f41647f54
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1716554703482	Marionette	INFO	Stopped listening on port 57882
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/shared/FormAutofillHandler.sys.mjs, line 78: TypeError: this.window is null

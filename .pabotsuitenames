@@ -1,8 +1,8 @@
-datasources:dcca31537c4353b7bb0be4c080029e9e695b835b
+datasources:ed2b7d5b077e13e8f93cdceee9641dedae035517
 commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:ec28d15e3e38c8e9c256e055b6101a008e97ad64
---suite Suites.Click Alerts
+file:11af03f0f4f7de28798721310fd2b2e42a268af6
 --suite Suites.Click widget
 --suite Suites.Interaction widget
 --suite Suites.List Of Books
+--suite Suites.Click alerts

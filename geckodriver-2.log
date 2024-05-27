@@ -1,0 +1,19 @@
+1716548756474	geckodriver	INFO	Listening on 127.0.0.1:51829
+1716548759513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51830" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NAMRA~1.KAN\\AppData\\Local\\Temp\\rust_mozprofileS6t5sr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1716548760377	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1716548760527	Marionette	INFO	Listening on port 51838
+WebDriver BiDi listening on ws://127.0.0.1:51830
+Read port: 51838
+1716548760646	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51830/devtools/browser/9afeddf6-54bd-4f8c-8efc-cb946404c835
+1716548790435	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+1716548819918	Marionette	INFO	Stopped listening on port 51838
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/shared/FormAutofillHandler.sys.mjs, line 78: TypeError: this.window is null
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping

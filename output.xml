@@ -1,420 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-05-24T16:00:41.764587" rpa="false" schemaversion="5">
-<suite id="s1" name="Interaction widget" source="C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\tests\Website_tests\Interaction_widget.robot">
-<test id="s1-t1" name="Interaction of Sorting" line="8">
-<kw name="Start testcase for chrome" owner="CommonFunctionality">
+<robot generator="Robot 7.0 (Python 3.10.5 on win32)" generated="2024-05-24T17:43:27.825848" rpa="false" schemaversion="5">
+<suite id="s1" name="dataDriver" source="C:\Users\namra.kanwal\PycharmProjects\robotframework-with-selenium-new\Robot-Framework\dataDriver\dataDriver.robot">
+<test id="s1-t1" name="LoginFormTest using" line="20">
+<kw name="login">
+<kw name="Start testcase for firefox" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:00:42.027587" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
-<arg>${url2}</arg>
-<arg>${browser_chrome}</arg>
+<msg time="2024-05-24T17:43:28.154855" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_firefox}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-24T16:00:42.026582" elapsed="52.266859"/>
+<status status="PASS" start="2024-05-24T17:43:28.153857" elapsed="17.808966"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-24T17:43:55.969826" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-24T17:43:45.962823" elapsed="10.007003"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.293441" elapsed="0.251001"/>
+<status status="PASS" start="2024-05-24T17:43:55.969826" elapsed="0.268014"/>
 </kw>
-<status status="PASS" start="2024-05-24T16:00:42.026582" elapsed="52.517860"/>
+<status status="PASS" start="2024-05-24T17:43:28.152854" elapsed="28.084986"/>
 </kw>
-<kw name="Scroll To Percentage" owner="CommonFunctionality">
-<kw name="Get Screen Height" owner="CommonFunctionality">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:34.550441" level="INFO">Executing JavaScript:
-return window.innerHeight
-Without any arguments.</msg>
-<msg time="2024-05-24T16:01:34.577441" level="INFO">${height} = 686</msg>
-<var>${height}</var>
-<arg>return window.innerHeight</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.547447" elapsed="0.029994"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:43:56.238837" level="INFO">Typing text 'Admin' into text field '//input[@name='username']'.</msg>
+<arg>${username_orangeHRM}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:43:56.238837" elapsed="0.069990"/>
 </kw>
-<return>
-<value>${height}</value>
-<status status="PASS" start="2024-05-24T16:01:34.577441" elapsed="0.000000"/>
-</return>
-<msg time="2024-05-24T16:01:34.578441" level="INFO">${screen_height} = 686</msg>
-<var>${screen_height}</var>
-<status status="PASS" start="2024-05-24T16:01:34.547447" elapsed="0.030994"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:43:56.309828" level="INFO">Typing text ' admin123' into text field '//input[@name='password']'.</msg>
+<arg>${password_orangeHRM}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:43:56.308827" elapsed="0.053000"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:34.578441" level="INFO">${scroll_position} = 343.0</msg>
-<var>${scroll_position}</var>
-<arg>${screen_height} * ${percentage} / 100</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.578441" elapsed="0.001000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:34.580441" level="INFO">Executing JavaScript:
-window.scrollTo(0, 343.0)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, ${scroll_position})</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.579441" elapsed="0.013000"/>
-</kw>
-<arg>50</arg>
-<status status="PASS" start="2024-05-24T16:01:34.546441" elapsed="0.046000"/>
-</kw>
-<kw name="Click on interaction" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:34.594441" level="INFO">Clicking element 'CSS:#app &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div:nth-child(3)'.</msg>
-<arg>${interaction_widget}</arg>
+<msg time="2024-05-24T17:43:56.362827" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>${sign_in_orangeHRM}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.594441" elapsed="0.261001"/>
+<status status="PASS" start="2024-05-24T17:43:56.361827" elapsed="1.322001"/>
 </kw>
-<status status="PASS" start="2024-05-24T16:01:34.593443" elapsed="0.261999"/>
+<arg>username=Admin</arg>
+<arg>password= admin123</arg>
+<status status="PASS" start="2024-05-24T17:43:28.152854" elapsed="29.531975"/>
 </kw>
-<kw name="Scroll To Percentage" owner="CommonFunctionality">
-<kw name="Get Screen Height" owner="CommonFunctionality">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:34.859441" level="INFO">Executing JavaScript:
-return window.innerHeight
-Without any arguments.</msg>
-<msg time="2024-05-24T16:01:34.873443" level="INFO">${height} = 686</msg>
-<var>${height}</var>
-<arg>return window.innerHeight</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.858441" elapsed="0.015002"/>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-24T17:43:57.685833" elapsed="7.874939"/>
 </kw>
-<return>
-<value>${height}</value>
-<status status="PASS" start="2024-05-24T16:01:34.874442" elapsed="0.000000"/>
-</return>
-<msg time="2024-05-24T16:01:34.874442" level="INFO">${screen_height} = 686</msg>
-<var>${screen_height}</var>
-<status status="PASS" start="2024-05-24T16:01:34.857442" elapsed="0.017000"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:34.875453" level="INFO">${scroll_position} = 137.2</msg>
-<var>${scroll_position}</var>
-<arg>${screen_height} * ${percentage} / 100</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.874442" elapsed="0.001011"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:34.876444" level="INFO">Executing JavaScript:
-window.scrollTo(0, 137.2)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, ${scroll_position})</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.875453" elapsed="0.009989"/>
-</kw>
-<arg>20</arg>
-<status status="PASS" start="2024-05-24T16:01:34.856443" elapsed="0.028999"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${click_on_sortable}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.887443" elapsed="0.045015"/>
-</kw>
-<kw name="click_on_sortable" owner="WebsiteKeyword">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:34.934444" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[5]/div/ul/li[1]'.</msg>
-<arg>${click_on_sortable}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:34.933442" elapsed="0.122000"/>
-</kw>
-<status status="PASS" start="2024-05-24T16:01:34.933442" elapsed="0.122000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${alphabet_list}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.056441" elapsed="0.116000"/>
-</kw>
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:35.276442" level="INFO">${alphabet_locator} = &lt;selenium.webdriver.remote.webelement.WebElement (session="16c9b1a1e4d3d91783d86f23ec19d411", element="f.64771649FCE14D6597C1159F654344D8.d.0C9B7C051C4C79397111AB13F8A41EB7.e.37")&gt;</msg>
-<var>${alphabet_locator}</var>
-<arg>${alphabet_list}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.191442" elapsed="0.085999"/>
-</kw>
-<kw name="Create List" owner="BuiltIn">
-<msg time="2024-05-24T16:01:35.287442" level="INFO">@{element_texts} = [ ]</msg>
-<var>@{element_texts}</var>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.287442" elapsed="0.001000"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:35.326442" level="INFO">${text} = One
-Two
-Three
-Four
-Five
-Six</msg>
-<var>${text}</var>
-<arg>${alphabet_locator}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.292441" elapsed="0.034001"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:35.332440" level="INFO">${text} = OneTwoThreeFourFiveSix</msg>
-<var>${text}</var>
-<arg>$text.replace('\\n', '')</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.326442" elapsed="0.005998"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:35.333441" level="INFO">${element_texts} = ['OneTwoThreeFourFiveSix']</msg>
-<var>${element_texts}</var>
-<arg>${element_texts} + [$text]</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.333441" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${alphabet_locator.text}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.334442" elapsed="0.037001"/>
-</kw>
-<var name="${alphabet_locator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="16c9b1a1e4d3d91783d86f23ec19d411", element="f.64771649FCE14D6597C1159F654344D8.d.0C9B7C051C4C79397111AB13F8A41EB7.e.37")&gt;</var>
-<status status="PASS" start="2024-05-24T16:01:35.292441" elapsed="0.079002"/>
-</iter>
-<var>${alphabet_locator}</var>
-<value>${alphabet_locator}</value>
-<status status="PASS" start="2024-05-24T16:01:35.291443" elapsed="0.080000"/>
-</for>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:35.374444" level="INFO">${sorted_texts} = ['OneTwoThreeFourFiveSix']</msg>
-<var>${sorted_texts}</var>
-<arg>sorted($element_texts)</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.373444" elapsed="0.001000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Sorted List: ${sorted_texts}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.375442" elapsed="0.000000"/>
-</kw>
-<kw name="Should Be Equal" owner="BuiltIn">
-<arg>${element_texts}</arg>
-<arg>${sorted_texts}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.376441" elapsed="0.000000"/>
-</kw>
-<kw name="Finish testcase" owner="CommonFunctionality">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-24T16:01:35.377442" elapsed="3.002001"/>
-</kw>
-<status status="PASS" start="2024-05-24T16:01:35.377442" elapsed="3.002001"/>
-</kw>
-<doc>This case should verify the list is sorted</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-05-24T16:00:42.025582" elapsed="56.354860"/>
+<status status="PASS" start="2024-05-24T17:43:28.150851" elapsed="37.409921"/>
 </test>
-<test id="s1-t2" name="Grid Test Element Presence" line="32">
-<kw name="Start testcase for chrome" owner="CommonFunctionality">
+<test id="s1-t2" name="LoginFormTest using" line="20">
+<kw name="login">
+<kw name="Start testcase for firefox" owner="CommonFunctionality">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:38.382444" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/'.</msg>
-<arg>${url2}</arg>
-<arg>${browser_chrome}</arg>
+<msg time="2024-05-24T17:44:05.564763" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_firefox}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-24T16:01:38.382444" elapsed="4.061000"/>
+<status status="PASS" start="2024-05-24T17:44:05.564763" elapsed="12.849131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-24T17:44:28.422895" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-24T17:44:18.414893" elapsed="10.008002"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-24T16:01:42.444445" elapsed="11.509257"/>
+<status status="PASS" start="2024-05-24T17:44:28.422895" elapsed="0.272001"/>
 </kw>
-<status status="PASS" start="2024-05-24T16:01:38.381443" elapsed="15.573259"/>
+<status status="PASS" start="2024-05-24T17:44:05.564763" elapsed="23.130133"/>
 </kw>
-<kw name="Scroll To Percentage" owner="CommonFunctionality">
-<kw name="Get Screen Height" owner="CommonFunctionality">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:53.957702" level="INFO">Executing JavaScript:
-return window.innerHeight
-Without any arguments.</msg>
-<msg time="2024-05-24T16:01:53.984702" level="INFO">${height} = 686</msg>
-<var>${height}</var>
-<arg>return window.innerHeight</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:53.957702" elapsed="0.027000"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:44:28.695896" level="INFO">Typing text 'locked_user' into text field '//input[@name='username']'.</msg>
+<arg>${username_orangeHRM}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:44:28.694896" elapsed="0.058000"/>
 </kw>
-<return>
-<value>${height}</value>
-<status status="PASS" start="2024-05-24T16:01:53.985702" elapsed="0.000000"/>
-</return>
-<msg time="2024-05-24T16:01:53.985702" level="INFO">${screen_height} = 686</msg>
-<var>${screen_height}</var>
-<status status="PASS" start="2024-05-24T16:01:53.956702" elapsed="0.029000"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:44:28.754906" level="INFO">Typing text ' secret_sauce' into text field '//input[@name='password']'.</msg>
+<arg>${password_orangeHRM}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:44:28.753897" elapsed="0.036001"/>
 </kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:53.986702" level="INFO">${scroll_position} = 343.0</msg>
-<var>${scroll_position}</var>
-<arg>${screen_height} * ${percentage} / 100</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:53.986702" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:53.988703" level="INFO">Executing JavaScript:
-window.scrollTo(0, 343.0)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, ${scroll_position})</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:53.987702" elapsed="0.009001"/>
-</kw>
-<arg>50</arg>
-<status status="PASS" start="2024-05-24T16:01:53.955702" elapsed="0.041001"/>
-</kw>
-<kw name="Click on interaction" owner="WebsiteKeyword">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:53.999703" level="INFO">Clicking element 'CSS:#app &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div:nth-child(3)'.</msg>
-<arg>${interaction_widget}</arg>
+<msg time="2024-05-24T17:44:28.790897" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>${sign_in_orangeHRM}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:53.998702" elapsed="0.226000"/>
+<status status="PASS" start="2024-05-24T17:44:28.789898" elapsed="1.046999"/>
 </kw>
-<status status="PASS" start="2024-05-24T16:01:53.997703" elapsed="0.226999"/>
+<arg>username=locked_user</arg>
+<arg>password= secret_sauce</arg>
+<status status="PASS" start="2024-05-24T17:44:05.563763" elapsed="24.273134"/>
 </kw>
-<kw name="Scroll To Percentage" owner="CommonFunctionality">
-<kw name="Get Screen Height" owner="CommonFunctionality">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.230702" level="INFO">Executing JavaScript:
-return window.innerHeight
-Without any arguments.</msg>
-<msg time="2024-05-24T16:01:54.239701" level="INFO">${height} = 686</msg>
-<var>${height}</var>
-<arg>return window.innerHeight</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.229701" elapsed="0.010000"/>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-24T17:44:29.837913" elapsed="3.506985"/>
 </kw>
-<return>
-<value>${height}</value>
-<status status="PASS" start="2024-05-24T16:01:54.239701" elapsed="0.000000"/>
-</return>
-<msg time="2024-05-24T16:01:54.239701" level="INFO">${screen_height} = 686</msg>
-<var>${screen_height}</var>
-<status status="PASS" start="2024-05-24T16:01:54.228702" elapsed="0.010999"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:54.240702" level="INFO">${scroll_position} = 343.0</msg>
-<var>${scroll_position}</var>
-<arg>${screen_height} * ${percentage} / 100</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.240702" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.241702" level="INFO">Executing JavaScript:
-window.scrollTo(0, 343.0)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, ${scroll_position})</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.241702" elapsed="0.016003"/>
-</kw>
-<arg>50</arg>
-<status status="PASS" start="2024-05-24T16:01:54.227703" elapsed="0.030002"/>
-</kw>
-<kw name="click_on_sortable" owner="WebsiteKeyword">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.259703" level="INFO">Clicking element 'xpath:/html/body/div[2]/div/div/div/div[1]/div/div/div[5]/div/ul/li[1]'.</msg>
-<arg>${click_on_sortable}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.258701" elapsed="0.127002"/>
-</kw>
-<status status="PASS" start="2024-05-24T16:01:54.258701" elapsed="0.127002"/>
-</kw>
-<kw name="Click on grid" owner="WebsiteKeyword">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.387704" level="INFO">Clicking element 'CSS:#demo-tab-grid'.</msg>
-<arg>${Click_grid}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.387704" elapsed="0.148999"/>
-</kw>
-<status status="PASS" start="2024-05-24T16:01:54.386702" elapsed="0.150001"/>
-</kw>
-<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.537702" elapsed="0.000000"/>
-</kw>
-<kw name="Scroll To Percentage" owner="CommonFunctionality">
-<kw name="Get Screen Height" owner="CommonFunctionality">
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.544705" level="INFO">Executing JavaScript:
-return window.innerHeight
-Without any arguments.</msg>
-<msg time="2024-05-24T16:01:54.554703" level="INFO">${height} = 686</msg>
-<var>${height}</var>
-<arg>return window.innerHeight</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.543702" elapsed="0.012001"/>
-</kw>
-<return>
-<value>${height}</value>
-<status status="PASS" start="2024-05-24T16:01:54.555703" elapsed="0.000000"/>
-</return>
-<msg time="2024-05-24T16:01:54.556702" level="INFO">${screen_height} = 686</msg>
-<var>${screen_height}</var>
-<status status="PASS" start="2024-05-24T16:01:54.540704" elapsed="0.015998"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-05-24T16:01:54.557702" level="INFO">${scroll_position} = 343.0</msg>
-<var>${scroll_position}</var>
-<arg>${screen_height} * ${percentage} / 100</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.556702" elapsed="0.001000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.558702" level="INFO">Executing JavaScript:
-window.scrollTo(0, 343.0)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, ${scroll_position})</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.557702" elapsed="0.033007"/>
-</kw>
-<arg>50</arg>
-<status status="PASS" start="2024-05-24T16:01:54.539702" elapsed="0.052002"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${fifth_element}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.592704" elapsed="0.047000"/>
-</kw>
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.655702" level="INFO">${source_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a86c3d304a2bb0f14d12d1a6067d99ad", element="f.205966F7AE5786C6EC3D2D0291B2B908.d.8F1DC602D2FF6F97656CA42BFE076466.e.22")&gt;</msg>
-<var>${source_element}</var>
-<arg>${fifth_element}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.642704" elapsed="0.012998"/>
-</kw>
-<kw name="Get WebElement" owner="SeleniumLibrary">
-<msg time="2024-05-24T16:01:54.673701" level="INFO">${target_element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="a86c3d304a2bb0f14d12d1a6067d99ad", element="f.205966F7AE5786C6EC3D2D0291B2B908.d.8F1DC602D2FF6F97656CA42BFE076466.e.23")&gt;</msg>
-<var>${target_element}</var>
-<arg>${nineth_element}</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.656703" elapsed="0.016998"/>
-</kw>
-<kw name="Drag And Drop" owner="SeleniumLibrary">
-<arg>${source_element}</arg>
-<arg>${target_element}</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" start="2024-05-24T16:01:54.674702" elapsed="0.694267"/>
-</kw>
-<kw name="Finish testcase" owner="CommonFunctionality">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-24T16:01:55.373973" elapsed="3.171003"/>
-</kw>
-<status status="PASS" start="2024-05-24T16:01:55.372968" elapsed="3.173009"/>
-</kw>
-<doc>This case drag the fifth element with nine</doc>
-<tag>Functional</tag>
-<status status="PASS" start="2024-05-24T16:01:38.381443" elapsed="20.165534"/>
+<status status="PASS" start="2024-05-24T17:44:05.562762" elapsed="27.782136"/>
 </test>
-<status status="PASS" start="2024-05-24T16:00:41.768582" elapsed="76.780395"/>
+<test id="s1-t3" name="LoginFormTest using" line="20">
+<kw name="login">
+<kw name="Start testcase for firefox" owner="CommonFunctionality">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:44:33.349897" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_firefox}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-24T17:44:33.349897" elapsed="14.448160"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-24T17:44:57.804066" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-24T17:44:47.799058" elapsed="10.005008"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-24T17:44:57.804066" elapsed="0.270995"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:44:33.348897" elapsed="24.726164"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:44:58.076063" level="INFO">Typing text 'admin' into text field '//input[@name='username']'.</msg>
+<arg>${username_orangeHRM}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:44:58.075061" elapsed="0.041000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:44:58.117078" level="INFO">Typing text ' admin123' into text field '//input[@name='password']'.</msg>
+<arg>${password_orangeHRM}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:44:58.117078" elapsed="0.031983"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-24T17:44:58.151060" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<arg>${sign_in_orangeHRM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-24T17:44:58.149061" elapsed="5.327001"/>
+</kw>
+<arg>username=admin</arg>
+<arg>password= admin123</arg>
+<status status="PASS" start="2024-05-24T17:44:33.348897" elapsed="30.127165"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-05-24T17:45:03.477063" elapsed="7.439814"/>
+</kw>
+<status status="PASS" start="2024-05-24T17:44:33.346897" elapsed="37.570972"/>
+</test>
+<status status="PASS" start="2024-05-24T17:43:27.849849" elapsed="103.068020"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">Functional</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Interaction widget">Interaction widget</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="dataDriver">dataDriver</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-24T16:00:41.758588" level="ERROR">Executing model modifier 'module' failed: AttributeError: module 'MyVisitor' has no attribute 'visit_suite'
-Traceback (most recent call last):
-  None
-AttributeError: module 'MyVisitor' has no attribute 'visit_suite'</msg>
+<msg time="2024-05-24T17:44:05.561764" level="WARN">Multiple tests with name 'LoginFormTest using' executed in suite 'dataDriver'.</msg>
+<msg time="2024-05-24T17:44:33.345897" level="WARN">Multiple tests with name 'LoginFormTest using' executed in suite 'dataDriver'.</msg>
 </errors>
 </robot>
