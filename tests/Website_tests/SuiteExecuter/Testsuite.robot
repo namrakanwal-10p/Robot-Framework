@@ -47,7 +47,6 @@ Click Alerts Tests
 Click Widget Tests
     [Documentation]    Test clicking widget elements
 
-    Wait until element is visible    ${Widgets}
     Click on widget
     Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
