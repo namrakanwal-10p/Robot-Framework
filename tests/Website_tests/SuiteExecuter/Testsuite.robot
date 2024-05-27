@@ -30,6 +30,8 @@ Add Delay
 Remove Overlapping Elements
     Execute JavaScript    document.querySelectorAll('img[alt="adplus-dvertising"]').forEach(el => el.remove());
     Execute JavaScript    document.querySelectorAll('iframe').forEach(el => el.remove());
+    Execute JavaScript    document.querySelectorAll('footer').forEach(el => el.style.display = 'none');
+    Execute JavaScript    document.querySelectorAll('div[role="dialog"]').forEach(el => el.style.display = 'none');
 
 *** Test Cases ***
 Click Alerts Tests
