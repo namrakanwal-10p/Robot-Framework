@@ -43,7 +43,7 @@ Click Alerts Tests
 
 Click Widget Tests
     [Documentation]    Test clicking widget elements
-    Sleep    7s
+
     Click on widget
     Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
@@ -60,7 +60,7 @@ Click Widget Tests
 
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
-    Sleep    7s
+    Sleep    1s
     Click on interaction
     Scroll To Percentage    20
     Wait until element is visible    ${click_on_sortable}
