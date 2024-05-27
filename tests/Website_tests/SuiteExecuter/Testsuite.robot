@@ -29,6 +29,7 @@ Add Delay
 
 Remove Overlapping Elements
     Execute JavaScript    document.querySelectorAll('img[alt="adplus-dvertising"]').forEach(el => el.remove());
+    Execute JavaScript    document.querySelectorAll('iframe').forEach(el => el.remove());
 
 *** Test Cases ***
 Click Alerts Tests
@@ -61,8 +62,6 @@ Click Widget Tests
 
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
-
-    Wait until element is visible     ${interaction_widget}    5s
     Click on interaction
     Scroll To Percentage    20
     Wait until element is visible    ${click_on_sortable}
