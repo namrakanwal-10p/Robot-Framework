@@ -29,7 +29,6 @@ Add Delay
 *** Test Cases ***
 Click Alerts Tests
     [Documentation]    Test clicking alert buttons
-    Sleep    10s
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
