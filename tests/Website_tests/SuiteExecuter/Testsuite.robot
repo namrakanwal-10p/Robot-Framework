@@ -59,17 +59,17 @@ Click Widget Tests
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
     Click on interaction
-  Scroll To Percentage    20
-  Wait until element is visible    ${click_on_sortable}
-  click_on_sortable
-  Wait Until Element Is Visible    ${alphabet_list}
-  ${alphabet_locator}    Get WebElement   ${alphabet_list}
-  @{element_texts}=    Create List
-  FOR    ${alphabet_locator}     IN    ${alphabet_locator}
-  ${text}=    Get Text    ${alphabet_locator}
-  ${text}=    Evaluate    $text.replace('\\n', '')   # Remove newline characters
-  ${element_texts}=    Evaluate    ${element_texts} + [$text]
-   Log to console    ${alphabet_locator.text}
+    Scroll To Percentage    20
+    Wait until element is visible    ${click_on_sortable}
+    click_on_sortable
+    Wait Until Element Is Visible    ${alphabet_list}
+    ${alphabet_locator}    Get WebElement   ${alphabet_list}
+    @{element_texts}=    Create List
+    FOR    ${alphabet_locator}     IN    ${alphabet_locator}
+    ${text}=    Get Text    ${alphabet_locator}
+    ${text}=    Evaluate    $text.replace('\\n', '')   # Remove newline characters
+    ${element_texts}=    Evaluate    ${element_texts} + [$text]
+    Log to console    ${alphabet_locator.text}
   END
     ${sorted_texts}=    Evaluate    sorted($element_texts)
     Log to console    Sorted List: ${sorted_texts}

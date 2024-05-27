@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Increase Git checkout timeout to 10 minutes
                 script {
                     def scmVars = checkout(
                         [$class: 'GitSCM',
@@ -20,16 +19,31 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                // Install dependencies if needed (e.g., Python packages)
+                echo 'Installing dependencies...'
                 bat 'pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests') {
             steps {
-                // Execute your Robot Framework script
+                echo 'Running tests...'
                 bat 'robot --outputdir results --loglevel TRACE tests/Website_tests/SuiteExecuter/Testsuite.robot'
             }
+        }
+    }
+
+    post {
+        always {
+            echo 'Archiving artifacts and publishing reports...'
+            archiveArtifacts artifacts: 'results/**/*', allowEmptyArchive: true
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: false,
+                keepAll: true,
+                reportDir: 'results',
+                reportFiles: 'log.html,report.html',
+                reportName: 'Robot Framework Test Report'
+            ])
         }
     }
 }
