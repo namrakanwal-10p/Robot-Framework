@@ -10,9 +10,15 @@ pipeline {
             steps {
                 script {
                     def scmVars = checkout(
+<<<<<<< HEAD
                         [$class: 'GitSCM',
                          branches: [[name: '*/main']],
                          doGenerateSubmoduleConfigurations: false,
+=======
+                        [$class: 'GitSCM', 
+                         branches: [[name: '*/main']],
+                         doGenerateSubmoduleConfigurations: false, 
+>>>>>>> origin/main
                          extensions: [[$class: 'CloneOption', timeout: 10]],
                          userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
                         ]
