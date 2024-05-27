@@ -15,7 +15,7 @@ ${DELAY}    2s   # Define the delay duration
 Open My Browser
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
-    sleep     15s
+    sleep     10s
 
 Reset Browser State
     Go To    ${URL}
