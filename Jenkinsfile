@@ -9,7 +9,7 @@ pipeline {
                         [$class: 'GitSCM',
                          branches: [[name: '*/main']],
                          doGenerateSubmoduleConfigurations: false,
-                         extensions: [[$class: 'CloneOption', timeout: 10]],
+                         extensions: [[$class: 'CloneOption', timeout:30]],
                          userRemoteConfigs: [[url: 'https://github.com/namrakanwal-10p/Robot-Framework.git', credentialsId: 'namra']]
                         ]
                     )
