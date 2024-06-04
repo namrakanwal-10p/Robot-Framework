@@ -36,7 +36,6 @@ Remove Overlapping Elements
 *** Test Cases ***
 Click Alerts Tests
     [Documentation]    Test clicking alert buttons
-    Sleep    7s
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
