@@ -15,7 +15,6 @@ ${DELAY}    2s   # Define the delay duration
 Open My Browser
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
-    sleep     10s
 
 Reset Browser State
     Go To    ${URL}
@@ -65,9 +64,8 @@ Click Widget Tests
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
 
-    Sleep    5s
-    Scroll To Percentage    20
     Sleep    10s
+    Scroll To Percentage    20
     Click on interaction
     Scroll To Percentage    20
     Wait until element is visible    ${click_on_sortable}
