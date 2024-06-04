@@ -64,6 +64,9 @@ Click Widget Tests
 
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
+
+    Scroll To Percentage    20
+    Sleep    10s
     Click on interaction
     Scroll To Percentage    20
     Wait until element is visible    ${click_on_sortable}
