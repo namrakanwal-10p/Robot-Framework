@@ -46,7 +46,7 @@ Click Alerts Tests
 Click Widget Tests
     [Documentation]    Test clicking widget elements
 
-    Sleep    5s
+    Sleep    7s
     Click on widget
     Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
