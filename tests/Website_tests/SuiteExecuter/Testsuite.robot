@@ -65,6 +65,7 @@ Click Widget Tests
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
 
+    Sleep    5s
     Scroll To Percentage    20
     Sleep    10s
     Click on interaction
