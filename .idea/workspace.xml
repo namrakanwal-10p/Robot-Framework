@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="197892b5-5b6c-4ccb-9c8e-0fbcbcc19833" name="Changes" comment="website &amp; mobile code">
-      <change beforePath="$PROJECT_DIR$/tests/Website_tests/SuiteExecuter/Testsuite.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Website_tests/SuiteExecuter/Testsuite.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
