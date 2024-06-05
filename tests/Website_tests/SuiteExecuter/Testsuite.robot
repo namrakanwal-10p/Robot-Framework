@@ -6,7 +6,7 @@ Resource    ../../../resources/WebsiteKeyword.robot
 Resource    ../../../resources/CommonFunctionality.robot
 
 *** Variables ***
-${BROWSER}    chrome
+${BROWSER}    firefox
 ${URL}    https://demoqa.com/
 ${DELAY}    2s   # Define the delay duration
 
