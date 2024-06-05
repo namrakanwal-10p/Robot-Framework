@@ -2,7 +2,6 @@
 Suite Setup    Open My Browser
 Suite Teardown    Close Browser
 Test Setup    Reset Browser State
-Test Teardown    Add Delay
 Resource    ../../../resources/WebsiteKeyword.robot
 Resource    ../../../resources/CommonFunctionality.robot
 
@@ -23,9 +22,6 @@ Reset Browser State
 Close Browser
     Close All Browsers
 
-Add Delay
-    Sleep    ${DELAY}   # Adding delay between test cases
-
 Remove Overlapping Elements
     Execute JavaScript    document.querySelectorAll('img[alt="adplus-dvertising"]').forEach(el => el.remove());
     Execute JavaScript    document.querySelectorAll('iframe').forEach(el => el.remove());
@@ -35,7 +31,7 @@ Remove Overlapping Elements
 *** Test Cases ***
 Click Alerts Tests
     [Documentation]    Test clicking alert buttons
-    Sleep    5s
+    Wait until element is visible    ${Alert_widget}
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
@@ -46,7 +42,7 @@ Click Alerts Tests
 Click Widget Tests
     [Documentation]    Test clicking widget elements
 
-    Sleep    7s
+    Wait until element is visible    ${Widgets}
     Click on widget
     Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
@@ -64,7 +60,7 @@ Click Widget Tests
 Interaction Widget Tests
     [Documentation]    Test interaction widgets
 
-    Sleep    10s
+    Wait until element is visible    ${interaction_widget}
     Scroll To Percentage    20
     Click on interaction
     Scroll To Percentage    20
