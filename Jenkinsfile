@@ -27,7 +27,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Running tests...'
-                bat ' robot -d results --loglevel TRACE tests/Website_tests/*.robot'
+                bat 'robot --outputdir results --loglevel TRACE tests/Website_tests/SuiteExecuter/Testsuite.robot'
             }
         }
     }
