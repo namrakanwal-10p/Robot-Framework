@@ -32,6 +32,7 @@ Remove Overlapping Elements
 Click Alerts Tests
     [Documentation]    Test clicking alert buttons
     Wait until element is visible    ${Alert_widget}
+    Sleep     5s
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
@@ -43,6 +44,7 @@ Click Widget Tests
     [Documentation]    Test clicking widget elements
 
     Wait until element is visible    ${Widgets}
+    Sleep    5s
     Click on widget
     Scroll To Percentage    50    # Scroll down by 50% of the screen height
     Click on date Picker
@@ -61,6 +63,7 @@ Interaction Widget Tests
     [Documentation]    Test interaction widgets
 
     Wait until element is visible    ${interaction_widget}
+    Sleep    5s
     Scroll To Percentage    20
     Click on interaction
     Scroll To Percentage    20
