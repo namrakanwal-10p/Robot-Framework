@@ -18,6 +18,7 @@ Open My Browser
 Reset Browser State
     Go To    ${URL}
     Remove Overlapping Elements
+    Set selenium timeout    10s
 
 Close Browser
     Close All Browsers
@@ -31,8 +32,8 @@ Remove Overlapping Elements
 *** Test Cases ***
 Click Alerts Tests
     [Documentation]    Test clicking alert buttons
-    Wait until element is visible    ${Alert_widget}
-    Sleep     5s
+
+    Sleep     10s
     Alert widget
     Wait Until Element Is Visible    ${Alert_button}
     Alert button
