@@ -64,7 +64,6 @@ Interaction Widget Tests
     [Documentation]    Test interaction widgets
 
     Wait until element is visible    ${interaction_widget}
-    Sleep    5s
     Scroll To Percentage    20
     Click on interaction
     Scroll To Percentage    20
