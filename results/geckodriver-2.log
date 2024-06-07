@@ -1,0 +1,5 @@
+1717597936029	geckodriver	INFO	Listening on 127.0.0.1:35099
+mkdir: cannot create directory ‘//.mozilla’: Permission denied
+1717597937101	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "39209" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIJRXGd"
+mkdir: cannot create directory ‘//.mozilla’: Permission denied
+Error: cannot open display: :99
